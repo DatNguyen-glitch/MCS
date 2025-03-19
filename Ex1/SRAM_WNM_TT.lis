@@ -1,0 +1,148 @@
+ ****** HSPICE -- Q-2020.03-SP2-2 linux64 (Nov  1 2020) ******                  
+  Copyright (c) 1986 - 2025 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: SRAM_WNM_TT.sp                                                    
+  Command line options: /RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/linux64/hspice -i SRAM_WNM_TT.sp -o SRAM_WNM_TT.lis
+  Start time: Wed Mar 19 20:48:12 2025
+ lic:  
+ lic: FLEXlm: SDK_12.6 
+ lic: USER:   es25MCS042           HOSTNAME: ee28 
+ lic: HOSTID: "d85ed3efc19a"       PID:      48431 
+ lic: Using FLEXlm license file: 
+ lic: 26585@lshc 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 14-may-2025/2024.09 
+ lic: 222(in_use)/1100(total) FLOATING license(s) on SERVER 26585@lshc 
+ lic:   
+  
+      
+             
+ Warning:'Floating bulk' occurs 1 times
+ Summary of floating bulk:
+ -----------------------
+ |Node      |Device    |
+ |----------+----------|
+ |x         |mpr       |
+ -----------------------
+              
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+1****** HSPICE -- Q-2020.03-SP2-2 linux64 (Nov  1 2020) ******                  
+ ******  
+ .title write noise margin
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:bl      =   0.      0:blb     = 700.0000m 0:gl      =   0.     
+ +0:gr      =   0.      0:q       = 252.4796m 0:qb      = 700.0000m
+ +0:vdd     = 700.0000m 0:wl      = 700.0000m 0:x       = 649.3706m
+
+
+ **** voltage sources
+
+ subckt                                                                    
+ element  0:vbl      0:vblb     0:vgl      0:vgr      0:vvdd     0:vwl     
+  volts      0.       700.0000m    0.         0.       700.0000m  700.0000m
+  current   70.0000   -70.0000   138.1516f  354.4571f  -23.1808u -318.9971f
+  power      0.        49.0000     0.         0.        16.2266u  223.2980f
+
+     total voltage source power dissipation=   49.0000        watts
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:mpr      0:mnr      0:mpl      0:mnl      0:mnpr     0:mnpl    
+ model    0:pmos_sra 0:nmos_sra 0:pmos_sra 0:nmos_sra 0:nmos_sra 0:nmos_sra
+ region   Saturation Cutoff     Linear     Cutoff     Linear     Cutoff    
+  id       -23.1808u  472.3640f -874.1659f  678.4962f  -23.1808u  1.245e-19
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs     -700.0000m    0.      -700.0000m    0.       447.5204m    7.8167n
+  vds     -447.5204m  252.4796m   -7.8167n  700.0000m -252.4796m    7.8167n
+  vbs      -50.6294m  649.3706m  -50.6294m  649.3706m  396.8910m  -50.6294m
+  vth     -332.7394m  409.1334m -339.1310m  406.6380m  409.1334m  410.1164m
+  vdsat   -370.9173m   70.6690m -365.6435m   70.6690m  281.5298m   70.6690m
+  vod     -367.2606m -409.1334m -360.8690m -406.6380m  290.8666m -410.1164m
+  beta       1.6413m    2.1736m    1.6413m    2.1736m    2.1736m    2.1736m
+  gam eff    0.         0.         0.         0.         0.         0.     
+  gm        77.9288u   17.9667p    1.6380p   25.5583p   74.0352u    4.4652a
+  gds       16.4370u  427.6720f  111.8329u  516.9756f   33.7974u   14.9555p
+  gmb       64.8947p   12.2695a    1.6780a   17.3503a  171.0505p  1.370e-24
+  cdtot     11.2160a   10.2225a   25.3299a   10.2225a   28.5485a   10.2225a
+  cgtot     55.4959a   20.4450a   65.7671a   20.4450a   56.6592a   20.4450a
+  cstot     29.8396a   10.2225a   25.3299a   10.2225a   14.2325a   10.2225a
+  cbtot      0.         0.         0.         0.         0.         0.     
+  cgs       44.2874a   10.2225a   32.8836a   10.2225a   15.4024a   10.2225a
+  cgd       11.2085a   10.2225a   32.8836a   10.2225a   41.2569a   10.2225a
+
+
+
+
+          ***** job concluded
+ ******  
+ .title write noise margin
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: AMD EPYC 7713 64-Core Processor
+ cpu MHz	: 2000.000
+  
+ OS:
+ Linux version 3.10.0-1160.88.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Tue Mar 7 15:41:52 UTC 2023
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :   256
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      10 # elements   =      14
+  # resistors   =       0 # capacitors =       2 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       6
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       6 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1          13
+  dc sweep           0.71        7001       21013
+  readin             0.02
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        401.11 megabytes
+           total cpu time            0.75 seconds
+           total elapsed time        1.20 seconds
+           job started at     20:48:12 03/19/2025
+           job ended   at     20:48:13 03/19/2025
+           job total runtime         1.20 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.43(s)
