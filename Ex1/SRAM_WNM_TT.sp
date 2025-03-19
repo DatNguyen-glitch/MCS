@@ -55,6 +55,7 @@ Vblb BLB GND 0.7V
 .option post 
 .options probe
 .probe v(*) i(*)
+.print v(q) v(qb)
 
 .TEMP 25
 
