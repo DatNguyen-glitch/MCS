@@ -57,7 +57,7 @@ Vu u GND 0
 .option post 
 .options probe
 .probe v(*) i(*)
-.print v(q) v(qb)
+.print v(q) v(qb) v(gr) v(gl)
 
 .TEMP 25
 
