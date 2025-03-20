@@ -1,4 +1,4 @@
 pushgit:
 	git add .
 	git commit -m "run again"
-	git pÃush -u origin main
+	git push -u origin main
