@@ -57,21 +57,21 @@ Vu u GND 0
 .option post 
 .options probe
 .probe v(*) i(*)
-.print v(q) v(qb) v(gr) v(gl)
+.print v(q) v(qb) v(v1) v(v2)
 
 .TEMP 25
 
 *****************************
 **      Measurement        **
 *****************************
-*.measure dc max_1 max v(v1,v2)
-*.measure dc max_2 max v(v2,v1)
-*.measure dc SNM param='min(max_1,max_2)/sqrt(2)' 
+.measure dc max_1 max v(v1,v2)
+.measure dc max_2 max v(v2,v1)
+.measure dc SNM param='min(max_1,max_2)/sqrt(2)' 
 
 
-.measure cross_point when v(v1) = v(v2)
-.measure dc max_1 max v(v1,v2) FROM = 'cross_point' TO = '-cross_point'
-.measure dc max_2 max v(v2,v1) FROM = 'cross_point' TO = '-cross_point'
-.measure dc SNM param='(min(max_1,max_2)/sqrt(2))'
+*.measure cross_point when v(v1) = v(v2)
+*.measure dc max_1 max v(v1,v2) FROM = 'cross_point' TO = '-cross_point'
+*.measure dc max_2 max v(v2,v1) FROM = 'cross_point' TO = '-cross_point'
+*.measure dc SNM param='(min(max_1,max_2)/sqrt(2))'
 
 .end
