@@ -13,22 +13,23 @@
 *** for 1:1:1, the "m" of mos must equal to 1 ***
 
 Mpr  q   gr  VDD  x  pmos_sram  m=1
-Mnr  q   gr  GND  x  nmos_sram  m=2
+Mnr  q   gr  GND  x  nmos_sram  m=1
 
 Mpl  qb  gl  VDD  x  pmos_sram  m=1
-Mnl  qb  gl  GND  x  nmos_sram  m=2
+Mnl  qb  gl  GND  x  nmos_sram  m=1
 
-Mnpr BL  WL  q    x  nmos_sram  m=2
-Mnpl BLB WL  qb   x  nmos_sram  m=2
+Mnpr BL  WL  q    x  nmos_sram  m=1
+Mnpl BLB WL  qb   x  nmos_sram  m=1
 
 *****************************
 **     Voltage Source      **
 *****************************
 .global VDD GND
-.PARAM  BITCAP=1E-12
+.PARAM BITCAP=1E-12
+.PARAM VWL = 0.9V
 
 VVDD VDD GND 0.7v
-VWL  WL  GND 0.7V 
+VWL  WL  GND VWL 
 
 CBLB BLB GND BITCAP
 CBL  BL  GND BITCAP
@@ -73,5 +74,17 @@ Vu u GND 0
 *.measure dc max_1 max v(v1,v2) FROM = 'cross_point' TO = '-cross_point'
 *.measure dc max_2 max v(v2,v1) FROM = 'cross_point' TO = '-cross_point'
 *.measure dc SNM param='(min(max_1,max_2)/sqrt(2))'
+
+.ALTER
+.PARAM VWL = 0.8V
+
+.ALTER
+.PARAM VWL = 0.7V
+
+.ALTER
+.PARAM VWL = 0.6V
+
+.ALTER
+.PARAM VWL = 0.5V
 
 .end
