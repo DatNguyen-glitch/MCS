@@ -3,7 +3,7 @@
 **     Library setting     **
 *****************************
 .protect
-.include '../../tech_file/7nm_TT.pm'
+.include '../../tech_file/7nm_SS.pm'
 .unprotect 
 
 *****************************
