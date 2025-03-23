@@ -3,7 +3,7 @@
 **     Library setting     **
 *****************************
 .protect
-.include '../../tech_file/7nm_SS.pm'
+.include '../../tech_file/7nm_TT.pm'
 .unprotect 
 
 *****************************
@@ -32,7 +32,7 @@ Mnpl BLB WL  qb   x  nmos_sram  m=1
 .PARAM VBLB = 0.7V
 
 VVDD VDD GND VDDVAL
-VWL  WL  GND 0V 
+VWL  WL  GND 0.7V 
 
 CBLB BLB GND BITCAP
 CBL  BL  GND BITCAP

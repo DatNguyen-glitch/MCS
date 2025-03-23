@@ -1,9 +1,9 @@
-.title Noise Margin in Hold Operation 
+.title Noise Margin in Read Operation 
 *****************************
 **     Library setting     **
 *****************************
 .protect
-.include '../../tech_file/7nm_SS.pm'
+.include '../../tech_file/7nm_TT.pm'
 .unprotect 
 
 *****************************
@@ -13,13 +13,13 @@
 *** for 1:1:1, the "m" of mos must equal to 1 ***
 
 Mpr  q   gr  VDD  x  pmos_sram  m=1
-Mnr  q   gr  GND  x  nmos_sram  m=1
+Mnr  q   gr  GND  x  nmos_sram  m=2
 
 Mpl  qb  gl  VDD  x  pmos_sram  m=1
-Mnl  qb  gl  GND  x  nmos_sram  m=1
+Mnl  qb  gl  GND  x  nmos_sram  m=2
 
-Mnpr BL  WL  q    x  nmos_sram  m=1
-Mnpl BLB WL  qb   x  nmos_sram  m=1
+Mnpr BL  WL  q    x  nmos_sram  m=2
+Mnpl BLB WL  qb   x  nmos_sram  m=2
 
 *****************************
 **     Voltage Source      **
@@ -27,18 +27,14 @@ Mnpl BLB WL  qb   x  nmos_sram  m=1
 .global VDD GND
 .PARAM  BITCAP=1E-12
 
-.PARAM VDDVAL= 0.7V
-.PARAM VBL = 0.7V
-.PARAM VBLB = 0.7V
-
-VVDD VDD GND VDDVAL
-VWL  WL  GND 0V 
+VVDD VDD GND 0.7v
+VWL  WL  GND 0.7V 
 
 CBLB BLB GND BITCAP
 CBL  BL  GND BITCAP
 
-.ic V(BL) = VBL  
-.ic V(BLB)= VBLB  
+.ic V(BL) =0.7V  
+.ic V(BLB)=0.7V  
 *************************************
 ** Voltage control Voltage Source  **
 *************************************
@@ -53,7 +49,7 @@ Vu u GND 0
 **       DC Analysis       **
 *****************************
 .op
-.dc Vu '-VDDVAl/sqrt(2)' 'VDDVAL/sqrt(2)' 0.0001
+.dc Vu '-0.7/sqrt(2)' '0.7/sqrt(2)' 0.0001
 
 *****************************
 **    Simulator setting    **
@@ -77,20 +73,5 @@ Vu u GND 0
 *.measure dc max_1 max v(v1,v2) FROM = 'cross_point' TO = '-cross_point'
 *.measure dc max_2 max v(v2,v1) FROM = 'cross_point' TO = '-cross_point'
 *.measure dc SNM param='(min(max_1,max_2)/sqrt(2))'
-
-.ALTER
-.PARAM VDDVAL = 0.6V
-.PARAM VBL = 0.6V
-.PARAM VBLB = 0.6V
-
-.ALTER
-.PARAM VDDVAL = 0.5V
-.PARAM VBL = 0.5V
-.PARAM VBLB = 0.5V
-
-.ALTER
-.PARAM VDDVAL = 0.4V
-.PARAM VBL = 0.4V
-.PARAM VBLB = 0.4V
 
 .end

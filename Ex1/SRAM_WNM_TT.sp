@@ -12,10 +12,10 @@
 *** By default, m = 1 ***
 *** for 1:1:1, the "m" of mos must equal to 1 ***
 
-Mpr  q   gr  VDD  x  pmos_sram  m=1
-Mnr  q   gl  GND  x  nmos_sram  m=1
+Mpr  q   qb  VDD  x  pmos_sram  m=1
+Mnr  q   qb  GND  x  nmos_sram  m=1
 
-Mpl  qb  gr  VDD  x  pmos_sram  m=1
+Mpl  qb  gl  VDD  x  pmos_sram  m=1
 Mnl  qb  gl  GND  x  nmos_sram  m=1
 
 Mnpr BL  WL  q    x  nmos_sram  m=1
@@ -33,8 +33,10 @@ VWL  WL  GND 0.7V  ** Write operation
 CBLB BLB GND BITCAP
 CBL  BL  GND BITCAP
 
-.ic V(BL) = 0.7V  
-.ic V(BLB)= 0V  
+.ic V(BL) = 0V  
+.ic V(BLB)= 0.7V  
+.NODESET V(q) = 0.7V
+.NODESET V(qb) = 0V
 
 *****************************
 **       DC Analysis       **
@@ -45,7 +47,7 @@ CBL  BL  GND BITCAP
 .param vnoise=0
 
 Vgl gl GND dc=vnoise
-Vgr gr GND dc=vnoise
+**Vgr gr GND dc=vnoise
 
 Vbl BL GND 0V
 Vblb BLB GND 0.7V
