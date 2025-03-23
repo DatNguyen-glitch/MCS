@@ -7,16 +7,16 @@
   this software is strictly prohibited.
   Input File: SRAM_SNM_TT.sp                                                    
   Command line options: /RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/linux64/hspice -i SRAM_SNM_TT.sp -o SRAM_SNM_TT.lis
-  Start time: Thu Mar 20 20:00:09 2025
+  Start time: Sun Mar 23 13:14:32 2025
  lic:  
  lic: FLEXlm: SDK_12.6 
  lic: USER:   es25MCS042           HOSTNAME: ee28 
- lic: HOSTID: "d85ed3efc19a"       PID:      155554 
+ lic: HOSTID: "d85ed3efc19a"       PID:      108824 
  lic: Using FLEXlm license file: 
  lic: 26585@lshc 
  lic: Checkout 1 hspice 
  lic: License/Maintenance for hspice will expire on 14-may-2025/2024.09 
- lic: 264(in_use)/1100(total) FLOATING license(s) on SERVER 26585@lshc 
+ lic: 180(in_use)/1100(total) FLOATING license(s) on SERVER 26585@lshc 
  lic:   
   
       
@@ -10054,20 +10054,20 @@ y
 
   analysis           time    # points   tot. iter  conv.iter
   op point           0.01           1          10
-  dc sweep           0.79        9900       29712
-  readin             0.01
-  errchk             0.00
+  dc sweep           0.76        9900       29712
+  readin             0.02
+  errchk             0.01
   setup              0.00
   output             0.00
 
 
            peak memory used        406.02 megabytes
-           total cpu time            0.88 seconds
-           total elapsed time        1.16 seconds
-           job started at     20:00:09 03/20/2025
-           job ended   at     20:00:10 03/20/2025
-           job total runtime         1.16 seconds
+           total cpu time            0.87 seconds
+           total elapsed time        1.10 seconds
+           job started at     13:14:32 03/23/2025
+           job ended   at     13:14:33 03/23/2025
+           job total runtime         1.10 seconds
 
 
  lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.27(s)
+ lic: total license checkout elapse time:        0.22(s)
