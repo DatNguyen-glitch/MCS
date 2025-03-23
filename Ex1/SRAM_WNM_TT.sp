@@ -55,16 +55,16 @@ Vblb BLB GND 0.7V
 .option post 
 .options probe
 .probe v(*) i(*)
-.print v(q) v(qb)
+.print v(q) v(qb) v(gl) v(gr)
 
 .TEMP 25
 
 *****************************
 **      Measurement        **
 *****************************
-*.measure dc max_1 max v(v1,v2)
-*.measure dc max_2 max v(v2,v1)
-*.measure dc SNM param='min(max_1,max_2)/sqrt(2)' 
+.measure dc max_1 max v(v1,v2)
+.measure dc max_2 max v(v2,v1)
+.measure dc SNM param='min(max_1,max_2)/sqrt(2)' 
 
 
 **.measure cross_point when v(v1) = v(v2)
