@@ -7,16 +7,16 @@
   this software is strictly prohibited.
   Input File: SRAM_WNM_TT.sp                                                    
   Command line options: /RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/linux64/hspice -i SRAM_WNM_TT.sp -o SRAM_WNM_TT.lis
-  Start time: Mon Mar 24 21:03:50 2025
+  Start time: Mon Mar 24 21:07:59 2025
  lic:  
  lic: FLEXlm: SDK_12.6 
  lic: USER:   es25MCS042           HOSTNAME: ee28 
- lic: HOSTID: "d85ed3efc19a"       PID:      188267 
+ lic: HOSTID: "d85ed3efc19a"       PID:      190382 
  lic: Using FLEXlm license file: 
  lic: 26585@lshc 
  lic: Checkout 1 hspice 
  lic: License/Maintenance for hspice will expire on 14-may-2025/2024.09 
- lic: 165(in_use)/1100(total) FLOATING license(s) on SERVER 26585@lshc 
+ lic: 169(in_use)/1100(total) FLOATING license(s) on SERVER 26585@lshc 
  lic:   
   
   ******  Machine Information  ***********************************
@@ -78,12 +78,12 @@
  ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
  
   ******  Measured values for the netlist  ***********************
- min_1= 4.1854e-01    at= 8.6932e-03
+ min_1= 3.1200e-01    at= 2.6179e-01
              from= 0.0000e+00    to= 7.0000e-01
- snm= 2.9596e-01
-  dcop: begin dcop, cpu clock= 1.41E+00                                         
+ snm= 2.2061e-01
+  dcop: begin dcop, cpu clock= 1.46E+00                                         
                                                   
-  dcop: end dcop, cpu clock= 1.43E+00 peak memory=     406 mb tot_iter=      10 
+  dcop: end dcop, cpu clock= 1.48E+00 peak memory=     406 mb tot_iter=      10 
                                                   
 
           ***** job concluded
@@ -103,8 +103,8 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.02           1          10
-  dc sweep           1.09       14143       42431
+  op point           0.03           1          10
+  dc sweep           1.07       14143       42431
   readin             0.02
   errchk             0.00
   setup              0.00
@@ -112,10 +112,10 @@
 
 
            peak memory used        406.26 megabytes
-           total cpu time            1.22 seconds
-           total elapsed time        1.43 seconds
-           job started at     21:03:50 03/24/2025
-           job ended   at     21:03:51 03/24/2025
+           total cpu time            1.21 seconds
+           total elapsed time        1.48 seconds
+           job started at     21:07:59 03/24/2025
+           job ended   at     21:08:00 03/24/2025
   
   ******  Machine Information  ***********************************
   CPU:
@@ -155,12 +155,12 @@
  ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
  
   ******  Measured values for the netlist  ***********************
- min_1= 4.1095e-01    at= 7.8932e-03
+ min_1= 3.0345e-01    at= 2.5399e-01
              from= 0.0000e+00    to= 7.0000e-01
- snm= 2.9058e-01
-  dcop: begin dcop, cpu clock= 2.58E+00                                         
+ snm= 2.1457e-01
+  dcop: begin dcop, cpu clock= 2.60E+00                                         
                                                   
-  dcop: end dcop, cpu clock= 2.60E+00 peak memory=     406 mb tot_iter=      11 
+  dcop: end dcop, cpu clock= 2.61E+00 peak memory=     406 mb tot_iter=      11 
                                                   
 
           ***** job concluded
@@ -173,8 +173,8 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.03           1          11
-  dc sweep           1.05       14143       42431
+  op point           0.02           1          11
+  dc sweep           1.02       14143       42431
   readin             0.00
   errchk             0.00
   setup              0.00
@@ -182,10 +182,10 @@
 
 
            peak memory used        407.18 megabytes
-           total cpu time            1.17 seconds
-           total elapsed time        1.17 seconds
-           job started at     21:03:50 03/24/2025
-           job ended   at     21:03:52 03/24/2025
+           total cpu time            1.13 seconds
+           total elapsed time        1.13 seconds
+           job started at     21:07:59 03/24/2025
+           job ended   at     21:08:01 03/24/2025
   
   ******  Machine Information  ***********************************
   CPU:
@@ -225,12 +225,12 @@
  ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
  
   ******  Measured values for the netlist  ***********************
- min_1= 4.2581e-01    at= 1.2293e-02
+ min_1= 3.1687e-01    at= 2.7239e-01
              from= 0.0000e+00    to= 7.0000e-01
- snm= 3.0110e-01
-  dcop: begin dcop, cpu clock= 3.85E+00                                         
+ snm= 2.2406e-01
+  dcop: begin dcop, cpu clock= 3.74E+00                                         
                                                   
-  dcop: end dcop, cpu clock= 3.86E+00 peak memory=     406 mb tot_iter=      10 
+  dcop: end dcop, cpu clock= 3.76E+00 peak memory=     406 mb tot_iter=      10 
                                                   
 
           ***** job concluded
@@ -243,8 +243,8 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.02           1          10
-  dc sweep           1.15       14143       42432
+  op point           0.03           1          10
+  dc sweep           1.02       14143       42431
   readin             0.00
   errchk             0.00
   setup              0.00
@@ -252,12 +252,12 @@
 
 
            peak memory used        407.18 megabytes
-           total cpu time            1.26 seconds
-           total elapsed time        1.26 seconds
-           job started at     21:03:50 03/24/2025
-           job ended   at     21:03:53 03/24/2025
-           job total runtime         3.86 seconds
+           total cpu time            1.15 seconds
+           total elapsed time        1.15 seconds
+           job started at     21:07:59 03/24/2025
+           job ended   at     21:08:02 03/24/2025
+           job total runtime         3.76 seconds
 
 
  lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.19(s)
+ lic: total license checkout elapse time:        0.26(s)
