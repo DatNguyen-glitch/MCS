@@ -1,4 +1,4 @@
-.title Write Noise Margin 
+.title Write Noise Margin Operation 
 *****************************
 **     Library setting     **
 *****************************
@@ -11,15 +11,17 @@
 *****************************
 *** By default, m = 1 ***
 *** for 1:1:1, the "m" of mos must equal to 1 ***
+.param pu=1 pg=1 pd=1
+*.param pu=1 pg=2 pd=2
 
-Mpr  q   gr  VDD  x  pmos_sram  m=1
-Mnr  q   gr  GND  x  nmos_sram  m=1
+Mpr  q   gr  VDD  x  pmos_sram  m=pu
+Mnr  q   gr  GND  x  nmos_sram  m=pd
 
-Mpl  qb  gl  VDD  x  pmos_sram  m=1
-Mnl  qb  gl  GND  x  nmos_sram  m=1
+Mpl  qb  gl  VDD  x  pmos_sram  m=pu
+Mnl  qb  gl  GND  x  nmos_sram  m=pd
 
-Mnpr BL  WL  q    x  nmos_sram  m=1
-Mnpl BLB WL  qb   x  nmos_sram  m=1
+Mnpr BL  WL  q    x  nmos_sram  m=pg
+Mnpl BLB WL  qb   x  nmos_sram  m=pg
 
 *****************************
 **     Voltage Source      **
@@ -27,14 +29,22 @@ Mnpl BLB WL  qb   x  nmos_sram  m=1
 .global VDD GND
 .PARAM  BITCAP=1E-12
 
-VVDD VDD GND 0.7v
-VWL  WL  GND 0.7V  ** Write operation 
+VVDD VDD GND dc=v_vdd
+* write and read op
+VWL  WL  GND dc=v_vdd 
+
+* hold op
+* VWL  WL  GND 0V 
 
 CBLB BLB GND BITCAP
 CBL  BL  GND BITCAP
 
-.ic V(BL) = 0V  
-.ic V(BLB)= 0.7V  
+* .ic V(BL) = v_vdd 
+.ic V(BL) = 0 
+.ic V(BLB) = v_vdd
+
+* .ic V(q) = v_vdd
+* .ic V(qb) = 0
 
 *************************************
 ** Voltage control Voltage Source  **
@@ -50,12 +60,19 @@ Vu u GND 0
 **       DC Analysis       **
 *****************************
 .op
+.dc Vu '-1/sqrt(2)' '1/sqrt(2)' 0.001
+* .dc vnoise 0 v_vdd 0.0001
 
-.dc Vu '-0.7/sqrt(2)' '0.7/sqrt(2)' 0.0001
-.param vnoise=0
+*.param vnoise=0
+.param v_vdd=0.7
 
-Vbl BL GND 0V
-Vblb BLB GND 0.7V
+* Vgr gr GND dc=vnoise
+* Vgl VDD gl dc=vnoise
+
+VBLB BLB GND dc=v_vdd
+VBL BL GND dc=0
+
+
 *****************************
 **    Simulator setting    **
 *****************************
@@ -64,24 +81,30 @@ Vblb BLB GND 0.7V
 .option lis_new = 1 
 .options probe
 .probe v(*) i(*)
-.print v(q) v(qb) v(gl) v(gr)
 
 .TEMP 25
 
 *****************************
 **      Measurement        **
 *****************************
-.measure dc min_1 min v(v1,v2)
-.measure dc WNM param='(min_1/sqrt(2))'
+*.measure dc max_1 max v(v1,v2)
+*.measure dc max_2 max v(v2,v1)
+*.measure dc SNM param='min(max_1,max_2)/sqrt(2)' 
 
-.ALTER
+.print dc v(q) v(qb) v(gl) v(gr)
+
+.measure dc min_1 min v(v1,v2) FROM = 0 TO = 0.7
+.measure dc SNM param='(min_1/sqrt(2))'
+
+.alter
 .protect
 .include '../../tech_file/7nm_FF.pm'
 .unprotect 
 
-.ALTER
+.alter
 .protect
 .include '../../tech_file/7nm_SS.pm'
-.unprotect  
+.unprotect 
+
 
 .end

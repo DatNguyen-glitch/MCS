@@ -7,16 +7,16 @@
   this software is strictly prohibited.
   Input File: SRAM_WNM_TT.sp                                                    
   Command line options: /RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/linux64/hspice -i SRAM_WNM_TT.sp -o SRAM_WNM_TT.lis
-  Start time: Mon Mar 24 20:22:53 2025
+  Start time: Mon Mar 24 20:34:52 2025
  lic:  
  lic: FLEXlm: SDK_12.6 
  lic: USER:   es25MCS042           HOSTNAME: ee28 
- lic: HOSTID: "d85ed3efc19a"       PID:      173113 
+ lic: HOSTID: "d85ed3efc19a"       PID:      177192 
  lic: Using FLEXlm license file: 
  lic: 26585@lshc 
  lic: Checkout 1 hspice 
  lic: License/Maintenance for hspice will expire on 14-may-2025/2024.09 
- lic: 183(in_use)/1100(total) FLOATING license(s) on SERVER 26585@lshc 
+ lic: 159(in_use)/1100(total) FLOATING license(s) on SERVER 26585@lshc 
  lic:   
   
   ******  Machine Information  ***********************************
@@ -70,25 +70,25 @@
   ******  Analysis Details  **************************************
   Opening 'SRAM_WNM_TT.sw0' for output.
   Waveform Format: POST=Binary, POST_VERSION=2013
-  100.00% Elapsed Sweep: 9900 Estimated Time Left: 0:00:00        
+  100.00% Elapsed Sweep: 1415 Estimated Time Left: 0:00:00        
   DC End
  ******
- .title write noise margin
+ .title write noise margin operation
 
  ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
  
   ******  Measured values for the netlist  ***********************
- min_1=-3.1643e-08    at=-4.9497e-01
-             from=-4.9497e-01    to= 4.9493e-01
- wnm=-2.2375e-08
-  dcop: begin dcop, cpu clock= 9.90E-01                                         
+ min_1= 3.1200e-01    at= 2.6189e-01
+             from= 0.0000e+00    to= 7.0000e-01
+ snm= 2.2061e-01
+  dcop: begin dcop, cpu clock= 3.85E-01                                         
                                                   
-  dcop: end dcop, cpu clock= 1.00E+00 peak memory=     406 mb tot_iter=      10 
+  dcop: end dcop, cpu clock= 4.00E-01 peak memory=     402 mb tot_iter=      10 
                                                   
 
           ***** job concluded
  ******  
- .title write noise margin
+ .title write noise margin operation
 
  ****** job statistics summary tnom=  25.000 temp=  25.000 ******
 
@@ -104,18 +104,18 @@
 
   analysis           time    # points   tot. iter  conv.iter
   op point           0.02           1          10
-  dc sweep           0.74        9900       29709
+  dc sweep           0.13        1415        4247
   readin             0.01
   errchk             0.00
   setup              0.00
   output             0.00
 
 
-           peak memory used        406.26 megabytes
-           total cpu time            0.83 seconds
-           total elapsed time        1.00 seconds
-           job started at     20:22:53 03/24/2025
-           job ended   at     20:22:54 03/24/2025
+           peak memory used        402.60 megabytes
+           total cpu time            0.19 seconds
+           total elapsed time        0.40 seconds
+           job started at     20:34:52 03/24/2025
+           job ended   at     20:34:53 03/24/2025
   
   ******  Machine Information  ***********************************
   CPU:
@@ -150,22 +150,22 @@
   Waveform Format: POST=Binary, POST_VERSION=2013
   DC End
  ******
- .title write noise margin
+ .title write noise margin operation
 
  ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
  
   ******  Measured values for the netlist  ***********************
- min_1=-3.4008e-08    at=-4.9497e-01
-             from=-4.9497e-01    to= 4.9493e-01
- wnm=-2.4047e-08
-  dcop: begin dcop, cpu clock= 1.80E+00                                         
+ min_1= 3.0345e-01    at= 2.5389e-01
+             from= 0.0000e+00    to= 7.0000e-01
+ snm= 2.1457e-01
+  dcop: begin dcop, cpu clock= 5.59E-01                                         
                                                   
-  dcop: end dcop, cpu clock= 1.81E+00 peak memory=     406 mb tot_iter=      11 
+  dcop: end dcop, cpu clock= 5.74E-01 peak memory=     402 mb tot_iter=      11 
                                                   
 
           ***** job concluded
  ******  
- .title write noise margin
+ .title write noise margin operation
 
  ****** job statistics summary tnom=  25.000 temp=  25.000 ******
 
@@ -173,19 +173,19 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.03           1          11
-  dc sweep           0.72        9900       29709
+  op point           0.02           1          11
+  dc sweep           0.12        1415        4247
   readin             0.00
   errchk             0.00
   setup              0.00
   output             0.00
 
 
-           peak memory used        407.18 megabytes
-           total cpu time            0.81 seconds
-           total elapsed time        0.81 seconds
-           job started at     20:22:53 03/24/2025
-           job ended   at     20:22:54 03/24/2025
+           peak memory used        404.57 megabytes
+           total cpu time            0.17 seconds
+           total elapsed time        0.17 seconds
+           job started at     20:34:52 03/24/2025
+           job ended   at     20:34:53 03/24/2025
   
   ******  Machine Information  ***********************************
   CPU:
@@ -220,22 +220,22 @@
   Waveform Format: POST=Binary, POST_VERSION=2013
   DC End
  ******
- .title write noise margin
+ .title write noise margin operation
 
  ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
  
   ******  Measured values for the netlist  ***********************
- min_1=-2.8824e-08    at=-4.9497e-01
-             from=-4.9497e-01    to= 4.9493e-01
- wnm=-2.0382e-08
-  dcop: begin dcop, cpu clock= 2.62E+00                                         
+ min_1= 3.1687e-01    at= 2.7289e-01
+             from= 0.0000e+00    to= 7.0000e-01
+ snm= 2.2406e-01
+  dcop: begin dcop, cpu clock= 7.19E-01                                         
                                                   
-  dcop: end dcop, cpu clock= 2.64E+00 peak memory=     406 mb tot_iter=      10 
+  dcop: end dcop, cpu clock= 7.37E-01 peak memory=     397 mb tot_iter=      10 
                                                   
 
           ***** job concluded
  ******  
- .title write noise margin
+ .title write noise margin operation
 
  ****** job statistics summary tnom=  25.000 temp=  25.000 ******
 
@@ -243,21 +243,21 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.02           1          10
-  dc sweep           0.72        9900       29709
+  op point           0.03           1          10
+  dc sweep           0.11        1415        4247
   readin             0.00
   errchk             0.00
   setup              0.00
   output             0.00
 
 
-           peak memory used        407.18 megabytes
-           total cpu time            0.82 seconds
-           total elapsed time        0.82 seconds
-           job started at     20:22:53 03/24/2025
-           job ended   at     20:22:55 03/24/2025
-           job total runtime         2.64 seconds
+           peak memory used        404.57 megabytes
+           total cpu time            0.16 seconds
+           total elapsed time        0.16 seconds
+           job started at     20:34:52 03/24/2025
+           job ended   at     20:34:53 03/24/2025
+           job total runtime         0.74 seconds
 
 
  lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.15(s)
+ lic: total license checkout elapse time:        0.20(s)
