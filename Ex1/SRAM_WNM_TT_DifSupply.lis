@@ -7,16 +7,16 @@
   this software is strictly prohibited.
   Input File: SRAM_WNM_TT_DifSupply.sp                                          
   Command line options: /RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/linux64/hspice -i SRAM_WNM_TT_DifSupply.sp -o SRAM_WNM_TT_DifSupply.lis
-  Start time: Mon Mar 24 21:41:13 2025
+  Start time: Mon Mar 24 22:17:26 2025
  lic:  
  lic: FLEXlm: SDK_12.6 
  lic: USER:   es25MCS042           HOSTNAME: ee28 
- lic: HOSTID: "d85ed3efc19a"       PID:      204893 
+ lic: HOSTID: "d85ed3efc19a"       PID:      218218 
  lic: Using FLEXlm license file: 
  lic: 26585@lshc 
  lic: Checkout 1 hspice 
  lic: License/Maintenance for hspice will expire on 14-may-2025/2024.09 
- lic: 174(in_use)/1100(total) FLOATING license(s) on SERVER 26585@lshc 
+ lic: 181(in_use)/1100(total) FLOATING license(s) on SERVER 26585@lshc 
  lic:   
   
   ******  Machine Information  ***********************************
@@ -78,12 +78,12 @@
  ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
  
   ******  Measured values for the netlist  ***********************
- min_1= 3.1200e-01    at= 2.6179e-01
+ min_1= 4.1854e-01    at= 8.6932e-03
              from= 0.0000e+00    to= 7.0000e-01
- snm= 2.2061e-01
-  dcop: begin dcop, cpu clock= 1.41E+00                                         
+ snm= 2.9596e-01
+  dcop: begin dcop, cpu clock= 1.69E+00                                         
                                                   
-  dcop: end dcop, cpu clock= 1.42E+00 peak memory=     406 mb tot_iter=      10 
+  dcop: end dcop, cpu clock= 1.71E+00 peak memory=     406 mb tot_iter=      10 
                                                   
 
           ***** job concluded
@@ -103,19 +103,19 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.02           1          10
-  dc sweep           1.08       14143       42431
+  op point           0.03           1          10
+  dc sweep           1.06       14143       42431
   readin             0.02
-  errchk             0.01
+  errchk             0.00
   setup              0.00
   output             0.00
 
 
-           peak memory used        406.26 megabytes
-           total cpu time            1.22 seconds
-           total elapsed time        1.43 seconds
-           job started at     21:41:13 03/24/2025
-           job ended   at     21:41:14 03/24/2025
+           peak memory used        406.25 megabytes
+           total cpu time            1.19 seconds
+           total elapsed time        1.71 seconds
+           job started at     22:17:26 03/24/2025
+           job ended   at     22:17:28 03/24/2025
   
   ******  Machine Information  ***********************************
   CPU:
@@ -155,12 +155,12 @@
  ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
  
   ******  Measured values for the netlist  ***********************
- min_1= 2.3504e-01    at= 2.7699e-01
+ min_1= 3.7242e-01    at= 2.4393e-02
              from= 0.0000e+00    to= 7.0000e-01
- snm= 1.6620e-01
-  dcop: begin dcop, cpu clock= 2.56E+00                                         
+ snm= 2.6334e-01
+  dcop: begin dcop, cpu clock= 2.93E+00                                         
                                                   
-  dcop: end dcop, cpu clock= 2.57E+00 peak memory=     406 mb tot_iter=      10 
+  dcop: end dcop, cpu clock= 2.96E+00 peak memory=     406 mb tot_iter=      10 
                                                   
 
           ***** job concluded
@@ -174,7 +174,7 @@
 
   analysis           time    # points   tot. iter  conv.iter
   op point           0.03           1          10
-  dc sweep           1.03       14143       42432
+  dc sweep           1.12       14143       42433
   readin             0.00
   errchk             0.00
   setup              0.00
@@ -182,10 +182,10 @@
 
 
            peak memory used        407.18 megabytes
-           total cpu time            1.14 seconds
-           total elapsed time        1.15 seconds
-           job started at     21:41:13 03/24/2025
-           job ended   at     21:41:15 03/24/2025
+           total cpu time            1.24 seconds
+           total elapsed time        1.25 seconds
+           job started at     22:17:26 03/24/2025
+           job ended   at     22:17:29 03/24/2025
   
   ******  Machine Information  ***********************************
   CPU:
@@ -225,12 +225,12 @@
  ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
  
   ******  Measured values for the netlist  ***********************
- min_1= 1.4235e-01    at= 2.6589e-01
+ min_1= 2.6303e-01    at= 2.6889e-01
              from= 0.0000e+00    to= 7.0000e-01
- snm= 1.0066e-01
-  dcop: begin dcop, cpu clock= 3.70E+00                                         
+ snm= 1.8599e-01
+  dcop: begin dcop, cpu clock= 4.15E+00                                         
                                                   
-  dcop: end dcop, cpu clock= 3.72E+00 peak memory=     406 mb tot_iter=      10 
+  dcop: end dcop, cpu clock= 4.17E+00 peak memory=     406 mb tot_iter=      10 
                                                   
 
           ***** job concluded
@@ -244,7 +244,7 @@
 
   analysis           time    # points   tot. iter  conv.iter
   op point           0.03           1          10
-  dc sweep           1.03       14143       42432
+  dc sweep           1.09       14143       42432
   readin             0.00
   errchk             0.00
   setup              0.00
@@ -252,10 +252,10 @@
 
 
            peak memory used        407.18 megabytes
-           total cpu time            1.14 seconds
-           total elapsed time        1.15 seconds
-           job started at     21:41:13 03/24/2025
-           job ended   at     21:41:17 03/24/2025
+           total cpu time            1.21 seconds
+           total elapsed time        1.22 seconds
+           job started at     22:17:26 03/24/2025
+           job ended   at     22:17:30 03/24/2025
   
   ******  Machine Information  ***********************************
   CPU:
@@ -295,12 +295,12 @@
  ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
  
   ******  Measured values for the netlist  ***********************
- min_1= 4.8231e-02    at= 2.3329e-01
+ min_1= 9.7134e-02    at= 2.4269e-01
              from= 0.0000e+00    to= 7.0000e-01
- snm= 3.4105e-02
-  dcop: begin dcop, cpu clock= 4.86E+00                                         
+ snm= 6.8684e-02
+  dcop: begin dcop, cpu clock= 5.32E+00                                         
                                                   
-  dcop: end dcop, cpu clock= 4.88E+00 peak memory=     406 mb tot_iter=      10 
+  dcop: end dcop, cpu clock= 5.34E+00 peak memory=     406 mb tot_iter=      11 
                                                   
 
           ***** job concluded
@@ -313,7 +313,7 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.03           1          10
+  op point           0.03           1          11
   dc sweep           1.04       14143       42432
   readin             0.00
   errchk             0.00
@@ -322,12 +322,12 @@
 
 
            peak memory used        407.18 megabytes
-           total cpu time            1.15 seconds
+           total cpu time            1.16 seconds
            total elapsed time        1.16 seconds
-           job started at     21:41:13 03/24/2025
-           job ended   at     21:41:18 03/24/2025
-           job total runtime         4.88 seconds
+           job started at     22:17:26 03/24/2025
+           job ended   at     22:17:31 03/24/2025
+           job total runtime         5.34 seconds
 
 
  lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.20(s)
+ lic: total license checkout elapse time:        0.51(s)

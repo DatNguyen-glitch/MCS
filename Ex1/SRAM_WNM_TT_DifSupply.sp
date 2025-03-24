@@ -10,9 +10,9 @@
 **   Circuit Description   **
 *****************************
 *** By default, m = 1 ***
-*** for 1:1:1, the "m" of mos must equal to 1 ***
-.param pu=1 pg=1 pd=1
-*.param pu=1 pg=2 pd=2
+*** for 1:1:1, the "m" of mos must equal to 1 **
+*.param pu=1 pg=1 pd=1
+.param pu=1 pg=2 pd=2
 
 Mpr  q   gr  VDD  x  pmos_sram  m=pu
 Mnr  q   gr  GND  x  nmos_sram  m=pd

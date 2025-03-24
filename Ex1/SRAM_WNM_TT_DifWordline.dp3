@@ -7,30 +7,30 @@
      node    =voltage
 bl= 0.000e+00      
 blb= 7.000e-01      
-gl= 3.694e-01      
-gr= 1.429e-01      
-q= 1.429e-01      
-qb= 3.694e-01      
+gl= 3.576e-01      
+gr= 8.581e-02      
+q= 8.581e-02      
+qb= 3.576e-01      
 u= 0.000e+00      
-v1= 5.224e-01      
-v2= 2.022e-01      
+v1= 5.057e-01      
+v2= 1.214e-01      
 vdd= 7.000e-01      
 wl= 6.000e-01      
-x= 5.984e-01      
+x= 5.990e-01      
 
  **** voltage sources
 
 subckt                      
  element vbl                 
   volts    0.000e+00
-  current  1.218e-05
+  current  1.752e-05
   power    0.000e+00
 
 subckt                      
  element vblb                
   volts    7.000e-01
-  current -3.206e-09
-  power    2.244e-09
+  current -1.011e-08
+  power    7.080e-09
 
 subckt                      
  element vu                  
@@ -41,16 +41,16 @@ subckt
 subckt                      
  element vvdd                
   volts    7.000e-01
-  current -1.268e-05
-  power    8.877e-06
+  current -1.819e-05
+  power    1.274e-05
 
 subckt                      
  element vwl                 
   volts    6.000e-01
-  current -2.159e-13
-  power    1.295e-13
+  current -5.014e-13
+  power    3.008e-13
 
-     total voltage source power dissipation=  8.880e-06       watts
+     total voltage source power dissipation=  1.274e-05       watts
 
 
 
@@ -59,28 +59,28 @@ subckt
 
 subckt                      
  element eli                 
-  volts    3.694e-01
-  current  1.608e-14
+  volts    3.576e-01
+  current  1.164e-15
 
 
 
 subckt                      
  element ev1                 
-  volts    5.224e-01
+  volts    5.057e-01
   current  0.000e+00
 
 
 
 subckt                      
  element eri                 
-  volts    1.429e-01
-  current  2.128e-13
+  volts    8.581e-02
+  current  2.218e-13
 
 
 
 subckt                      
  element ev2                 
-  volts    2.022e-01
+  volts    1.214e-01
   current  0.000e+00
 
 
@@ -94,26 +94,26 @@ subckt
  element mpr                 
  model   pmos_sram           
  region   Saturation
-  id      -1.218e-05
+  id      -1.752e-05
   ibs      0.000e+00
   ibd      0.000e+00
-  vgs     -5.571e-01
-  vds     -5.571e-01
-  vbs     -1.016e-01
-  vth     -3.308e-01
-  vdsat   -2.560e-01
-  vod     -2.262e-01
+  vgs     -6.142e-01
+  vds     -6.142e-01
+  vbs     -1.010e-01
+  vth     -3.298e-01
+  vdsat   -3.029e-01
+  vod     -2.844e-01
   beta     1.641e-03
   gam eff -1.235e-29
-  gm       8.305e-05
-  gds      4.533e-06
-  gmb      5.452e-11
-  cdtot    1.026e-17
-  cgtot    4.913e-17
-  cstot    2.747e-17
+  gm       9.179e-05
+  gds      6.453e-06
+  gmb      6.603e-11
+  cdtot    1.028e-17
+  cgtot    5.165e-17
+  cstot    2.866e-17
   cbtot    0.000e+00
-  cgs      3.909e-17
-  cgd      1.003e-17
+  cgs      4.161e-17
+  cgd      1.004e-17
 
 
 
@@ -121,53 +121,53 @@ subckt
  element mnr                 
  model   nmos_sram           
  region   Subth     
-  id       9.833e-11
+  id       2.037e-11
   ibs      0.000e+00
   ibd      0.000e+00
-  vgs      1.429e-01
-  vds      1.429e-01
-  vbs      5.984e-01
-  vth      4.097e-01
+  vgs      8.581e-02
+  vds      8.581e-02
+  vbs      5.990e-01
+  vth      4.099e-01
   vdsat    7.067e-02
-  vod     -2.667e-01
-  beta     2.174e-03
+  vod     -3.241e-01
+  beta     4.347e-03
   gam eff -1.235e-29
-  gm       3.748e-09
-  gds      1.088e-10
-  gmb      2.356e-15
-  cdtot    1.022e-17
-  cgtot    2.045e-17
-  cstot    1.022e-17
+  gm       7.772e-10
+  gds      4.856e-11
+  gmb      4.974e-16
+  cdtot    2.045e-17
+  cgtot    4.089e-17
+  cstot    2.045e-17
   cbtot    0.000e+00
-  cgs      1.022e-17
-  cgd      1.022e-17
+  cgs      2.045e-17
+  cgd      2.045e-17
 
 
 
 subckt                      
  element mpl                 
  model   pmos_sram           
- region   Subth     
-  id      -4.977e-07
+ region   Saturation
+  id      -6.740e-07
   ibs      0.000e+00
   ibd      0.000e+00
-  vgs     -3.306e-01
-  vds     -3.306e-01
-  vbs     -1.016e-01
-  vth     -3.348e-01
-  vdsat   -9.547e-02
-  vod      4.168e-03
+  vgs     -3.424e-01
+  vds     -3.424e-01
+  vbs     -1.010e-01
+  vth     -3.346e-01
+  vdsat   -1.012e-01
+  vod     -7.861e-03
   beta     1.641e-03
   gam eff -1.235e-29
-  gm       1.296e-05
-  gds      3.008e-07
-  gmb      5.100e-12
-  cdtot    1.018e-17
-  cgtot    3.126e-17
-  cstot    1.728e-17
+  gm       1.622e-05
+  gds      3.816e-07
+  gmb      6.636e-12
+  cdtot    1.017e-17
+  cgtot    3.285e-17
+  cstot    1.828e-17
   cbtot    0.000e+00
-  cgs      2.120e-17
-  cgd      1.006e-17
+  cgs      2.281e-17
+  cgd      1.004e-17
 
 
 
@@ -175,26 +175,26 @@ subckt
  element mnl                 
  model   nmos_sram           
  region   Subth     
-  id       5.009e-07
+  id       6.841e-07
   ibs      0.000e+00
   ibd      0.000e+00
-  vgs      3.694e-01
-  vds      3.694e-01
-  vbs      5.984e-01
-  vth      4.085e-01
-  vdsat    7.915e-02
-  vod     -3.908e-02
-  beta     2.174e-03
+  vgs      3.576e-01
+  vds      3.576e-01
+  vbs      5.990e-01
+  vth      4.086e-01
+  vdsat    7.673e-02
+  vod     -5.098e-02
+  beta     4.347e-03
   gam eff -1.235e-29
-  gm       1.544e-05
-  gds      2.403e-07
-  gmb      1.083e-11
-  cdtot    1.022e-17
-  cgtot    2.616e-17
-  cstot    1.407e-17
+  gm       2.233e-05
+  gds      3.466e-07
+  gmb      1.514e-11
+  cdtot    2.044e-17
+  cgtot    4.962e-17
+  cstot    2.635e-17
   cbtot    0.000e+00
-  cgs      1.596e-17
-  cgd      1.020e-17
+  cgs      2.921e-17
+  cgd      2.041e-17
 
 
 
@@ -202,26 +202,26 @@ subckt
  element mnpr                
  model   nmos_sram           
  region   Linear    
-  id      -1.218e-05
+  id      -1.752e-05
   ibs      0.000e+00
   ibd      0.000e+00
-  vgs      4.571e-01
-  vds     -1.429e-01
-  vbs      4.555e-01
-  vth      4.097e-01
-  vdsat    2.053e-01
-  vod      1.903e-01
-  beta     2.174e-03
+  vgs      5.142e-01
+  vds     -8.581e-02
+  vbs      5.132e-01
+  vth      4.099e-01
+  vdsat    2.051e-01
+  vod      1.901e-01
+  beta     4.347e-03
   gam eff -1.235e-29
-  gm       5.828e-05
-  gds      4.431e-05
-  gmb      1.079e-10
-  cdtot    2.597e-17
-  cgtot    5.446e-17
-  cstot    1.632e-17
+  gm       6.888e-05
+  gds      1.543e-04
+  gmb      1.431e-10
+  cdtot    5.000e-17
+  cgtot    1.146e-16
+  cstot    3.950e-17
   cbtot    0.000e+00
-  cgs      1.860e-17
-  cgd      3.586e-17
+  cgs      4.776e-17
+  cgd      6.685e-17
 
 
 
@@ -229,26 +229,26 @@ subckt
  element mnpl                
  model   nmos_sram           
  region   Subth     
-  id       3.206e-09
+  id       1.011e-08
   ibs      0.000e+00
   ibd      0.000e+00
-  vgs      2.306e-01
-  vds      3.306e-01
-  vbs      2.290e-01
-  vth      4.087e-01
-  vdsat    7.073e-02
-  vod     -1.781e-01
-  beta     2.174e-03
+  vgs      2.424e-01
+  vds      3.424e-01
+  vbs      2.415e-01
+  vth      4.086e-01
+  vdsat    7.077e-02
+  vod     -1.662e-01
+  beta     4.347e-03
   gam eff -1.235e-29
-  gm       1.215e-07
-  gds      2.122e-09
-  gmb      4.230e-14
-  cdtot    1.022e-17
-  cgtot    2.050e-17
-  cstot    1.026e-17
+  gm       3.830e-07
+  gds      6.530e-09
+  gmb      1.350e-13
+  cdtot    2.044e-17
+  cgtot    4.107e-17
+  cstot    2.057e-17
   cbtot    0.000e+00
-  cgs      1.028e-17
-  cgd      1.022e-17
+  cgs      2.062e-17
+  cgd      2.044e-17
 
 
 
