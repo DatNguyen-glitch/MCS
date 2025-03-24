@@ -60,7 +60,7 @@ Vu u GND 0
 **       DC Analysis       **
 *****************************
 .op
-.dc Vu '-1/sqrt(2)' '1/sqrt(2)' 0.001
+.dc Vu '-1/sqrt(2)' '1/sqrt(2)' 0.0001
 * .dc vnoise 0 v_vdd 0.0001
 
 *.param vnoise=0
