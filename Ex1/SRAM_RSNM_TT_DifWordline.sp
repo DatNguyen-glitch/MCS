@@ -13,13 +13,13 @@
 *** for 1:1:1, the "m" of mos must equal to 1 ***
 
 Mpr  q   gr  VDD  x  pmos_sram  m=1
-Mnr  q   gr  GND  x  nmos_sram  m=1
+Mnr  q   gr  GND  x  nmos_sram  m=2
 
 Mpl  qb  gl  VDD  x  pmos_sram  m=1
-Mnl  qb  gl  GND  x  nmos_sram  m=1
+Mnl  qb  gl  GND  x  nmos_sram  m=2
 
-Mnpr BL  WL  q    x  nmos_sram  m=1
-Mnpl BLB WL  qb   x  nmos_sram  m=1
+Mnpr BL  WL  q    x  nmos_sram  m=2
+Mnpl BLB WL  qb   x  nmos_sram  m=2
 
 *****************************
 **     Voltage Source      **
