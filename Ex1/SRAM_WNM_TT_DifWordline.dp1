@@ -1,0 +1,254 @@
+ ****** HSPICE -- Q-2020.03-SP2-2 linux64 (Nov  1 2020) ******                  
+ ******  
+ .title write noise margin operation
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is all       simulation time is   0.000e+00
+     node    =voltage
+bl= 0.000e+00      
+blb= 7.000e-01      
+gl= 4.023e-01      
+gr= 1.027e-01      
+q= 1.027e-01      
+qb= 4.023e-01      
+u= 0.000e+00      
+v1= 5.689e-01      
+v2= 1.452e-01      
+vdd= 7.000e-01      
+wl= 8.000e-01      
+x= 3.274e-01      
+
+ **** voltage sources
+
+subckt                      
+ element vbl                 
+  volts    0.000e+00
+  current  1.588e-05
+  power    0.000e+00
+
+subckt                      
+ element vblb                
+  volts    7.000e-01
+  current -1.083e-06
+  power    7.579e-07
+
+subckt                      
+ element vu                  
+  volts    0.000e+00
+  current  0.000e+00
+  power    0.000e+00
+
+subckt                      
+ element vvdd                
+  volts    7.000e-01
+  current -1.607e-05
+  power    1.125e-05
+
+subckt                      
+ element vwl                 
+  volts    8.000e-01
+  current -8.469e-13
+  power    6.776e-13
+
+     total voltage source power dissipation=  1.201e-05       watts
+
+
+
+ **** voltage-controlled voltage sources
+
+
+subckt                      
+ element eli                 
+  volts    4.023e-01
+  current -1.121e-14
+
+
+
+subckt                      
+ element ev1                 
+  volts    5.689e-01
+  current  0.000e+00
+
+
+
+subckt                      
+ element eri                 
+  volts    1.027e-01
+  current  2.220e-13
+
+
+
+subckt                      
+ element ev2                 
+  volts    1.452e-01
+  current  0.000e+00
+
+
+
+
+
+ **** mosfets
+
+
+subckt                      
+ element mpr                 
+ model   pmos_sram           
+ region   Saturation
+  id      -1.588e-05
+  ibs      0.000e+00
+  ibd      0.000e+00
+  vgs     -5.973e-01
+  vds     -5.973e-01
+  vbs     -3.726e-01
+  vth     -3.301e-01
+  vdsat   -2.890e-01
+  vod     -2.672e-01
+  beta     1.641e-03
+  gam eff -1.235e-29
+  gm       8.981e-05
+  gds      5.868e-06
+  gmb      8.217e-11
+  cdtot    1.028e-17
+  cgtot    5.095e-17
+  cstot    2.834e-17
+  cbtot    0.000e+00
+  cgs      4.091e-17
+  cgd      1.004e-17
+
+
+
+subckt                      
+ element mnr                 
+ model   nmos_sram           
+ region   Subth     
+  id       2.004e-11
+  ibs      0.000e+00
+  ibd      0.000e+00
+  vgs      1.027e-01
+  vds      1.027e-01
+  vbs      3.274e-01
+  vth      4.099e-01
+  vdsat    7.067e-02
+  vod     -3.072e-01
+  beta     2.174e-03
+  gam eff -1.235e-29
+  gm       7.646e-10
+  gds      3.467e-11
+  gmb      2.996e-16
+  cdtot    1.022e-17
+  cgtot    2.045e-17
+  cstot    1.022e-17
+  cbtot    0.000e+00
+  cgs      1.022e-17
+  cgd      1.022e-17
+
+
+
+subckt                      
+ element mpl                 
+ model   pmos_sram           
+ region   Subth     
+  id      -1.892e-07
+  ibs      0.000e+00
+  ibd      0.000e+00
+  vgs     -2.977e-01
+  vds     -2.977e-01
+  vbs     -3.726e-01
+  vth     -3.353e-01
+  vdsat   -8.334e-02
+  vod      3.759e-02
+  beta     1.641e-03
+  gam eff -1.235e-29
+  gm       5.936e-06
+  gds      1.378e-07
+  gmb      2.771e-12
+  cdtot    1.019e-17
+  cgtot    2.666e-17
+  cstot    1.432e-17
+  cbtot    0.000e+00
+  cgs      1.653e-17
+  cgd      1.013e-17
+
+
+
+subckt                      
+ element mnl                 
+ model   nmos_sram           
+ region   Subth     
+  id       1.272e-06
+  ibs      0.000e+00
+  ibd      0.000e+00
+  vgs      4.023e-01
+  vds      4.023e-01
+  vbs      3.274e-01
+  vth      4.083e-01
+  vdsat    8.905e-02
+  vod     -6.044e-03
+  beta     2.174e-03
+  gam eff -1.235e-29
+  gm       3.165e-05
+  gds      5.147e-07
+  gmb      1.581e-11
+  cdtot    1.022e-17
+  cgtot    3.034e-17
+  cstot    1.680e-17
+  cbtot    0.000e+00
+  cgs      2.014e-17
+  cgd      1.020e-17
+
+
+
+subckt                      
+ element mnpr                
+ model   nmos_sram           
+ region   Linear    
+  id      -1.588e-05
+  ibs      0.000e+00
+  ibd      0.000e+00
+  vgs      6.973e-01
+  vds     -1.027e-01
+  vbs      2.248e-01
+  vth      4.099e-01
+  vdsat    3.619e-01
+  vod      3.901e-01
+  beta     2.174e-03
+  gam eff -1.235e-29
+  gm       1.971e-05
+  gds      1.316e-04
+  gmb      4.076e-11
+  cdtot    2.686e-17
+  cgtot    6.481e-17
+  cstot    2.303e-17
+  cbtot    0.000e+00
+  cgs      2.878e-17
+  cgd      3.603e-17
+
+
+
+subckt                      
+ element mnpl                
+ model   nmos_sram           
+ region   Subth     
+  id       1.083e-06
+  ibs      0.000e+00
+  ibd      0.000e+00
+  vgs      3.977e-01
+  vds      2.977e-01
+  vbs     -7.483e-02
+  vth      4.089e-01
+  vdsat    8.715e-02
+  vod     -1.116e-02
+  beta     2.174e-03
+  gam eff -1.235e-29
+  gm       2.804e-05
+  gds      5.180e-07
+  gmb      9.826e-12
+  cdtot    1.024e-17
+  cgtot    2.980e-17
+  cstot    1.642e-17
+  cbtot    0.000e+00
+  cgs      1.958e-17
+  cgd      1.022e-17
+
+
+
