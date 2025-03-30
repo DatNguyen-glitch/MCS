@@ -26,9 +26,10 @@ Mnpl BLB WL  qb   x  nmos_sram  m=1
 *****************************
 .global VDD GND
 .PARAM  BITCAP=1E-12
+.PARAM 	VWL=0.9V
 
 VVDD VDD GND 0.7v
-VWL  WL  GND 0V 
+VWL  WL  GND VWL 
 
 CBLB BLB GND BITCAP
 CBL  BL  GND BITCAP
@@ -68,10 +69,21 @@ Vu u GND 0
 .measure dc max_2 max v(v2,v1)
 .measure dc SNM param='min(max_1,max_2)/sqrt(2)' 
 
+.measure cross_point when v(v1) = v(v2)
+.measure dc max_1 max v(v1,v2) FROM = 'cross_point' TO = '-cross_point'
+.measure dc max_2 max v(v2,v1) FROM = 'cross_point' TO = '-cross_point'
+.measure dc SNM2 param='(min(max_1,max_2)/sqrt(2))'
 
-*.measure cross_point when v(v1) = v(v2)
-*.measure dc max_1 max v(v1,v2) FROM = 'cross_point' TO = '-cross_point'
-*.measure dc max_2 max v(v2,v1) FROM = 'cross_point' TO = '-cross_point'
-*.measure dc SNM param='(min(max_1,max_2)/sqrt(2))'
+.ALTER
+.PARAM VWL=0.8V
+
+.ALTER
+.PARAM VWL=0.7V
+
+.ALTER
+.PARAM VWL=0.6V
+
+.ALTER
+.PARAM VWL=0.5V
 
 .end
