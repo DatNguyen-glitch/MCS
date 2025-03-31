@@ -1,0 +1,7 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(30Mar2025:21:08:40):( irun ../00_TESTBED/tb_6to64dec.v -debug -notimingchecks -loadpli1 debpli:novas_pli_boot )
+s2::(31Mar2025:14:26:35):( irun ../00_TESTBED/tb_6to64dec.v -define RTL -debug -notimingchecks -loadpli1 debpli:novas_pli_boot )
+s3::(31Mar2025:16:09:03):( irun ../00_TESTBED/tb_6to64dec.v -define RTL -debug -notimingchecks -loadpli1 debpli:novas_pli_boot )
