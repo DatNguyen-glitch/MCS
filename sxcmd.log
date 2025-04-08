@@ -1,0 +1,22 @@
+### Custom WaveView ADV log file, revision T-2022.06 (build May 21, ) ###
+### created at 21:47:37 on Wed Mar 19 2025 (Linux AMD64) ###
+### Host Name: ee28   User ID: es25MCS042   PID: 73926   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+wv_move_window {Custom WaveView} {} 2058 161
+wv_select_window {Custom WaveView} 
+wv_resize_window {Custom WaveView} 1920 1009
+wv_move_window {Custom WaveView} {} 2058 161
+wv_press_tool_button {Custom WaveView} {} {OpenWaveform0} 
+wv_select_dialog {FileDialog} 
+wv_select_list_item {FileDialog} {} {FileList} {Ex1} 3
+wv_dclick_list_item {FileDialog} {} {FileList} {Ex1} 3
+wv_select_combox_item {FileDialog} {} {FileFilter} "Waveform Files:*" 1
+wv_close_dialog {FileDialog} 
+wv_select_window {Custom WaveView} 
+wv_close_window {Custom WaveView} 
+wv_select_dialog {Confirmation} 
+#wv_press_button {Confirmation} {} {Ok} 
