@@ -1,6 +1,0 @@
-$DATA1 SOURCE='HSPICE' VERSION='Q-2020.03-SP2-2 linux64' PARAM_COUNT=0
-.TITLE '.title noise margin in hold operation'
- snm              cross_point      max_1            max_2           
- snm2             temper           alter#          
-    0.1074          -0.3719           0.1519           0.1519       
-    0.1074          25.0000        2               
