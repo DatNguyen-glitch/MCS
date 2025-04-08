@@ -1,3 +1,0 @@
-define LIB_MAP ( $LIB_MAP \
-, ../../../../../../../tech_file/ASAP7_PDKandLIB_v1p5/asap7libs_24/verilog/asap7sc7p5t_24_SIMPLE_RVT_TT.v => asap7sc7p5t_24_SIMPLE_RVT_TT \
-)
