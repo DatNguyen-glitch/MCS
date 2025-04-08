@@ -1,0 +1,403 @@
+ ****** HSPICE -- Q-2020.03-SP2-2 linux64 (Nov  1 2020) ******                  
+  Copyright (c) 1986 - 2025 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: SRAM_WNM_TT_DifWordline.sp                                        
+  Command line options: /RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/linux64/hspice -i SRAM_WNM_TT_DifWordline.sp -o SRAM_WNM_TT_DifWordline.lis
+  Start time: Mon Mar 24 22:16:18 2025
+ lic:  
+ lic: FLEXlm: SDK_12.6 
+ lic: USER:   es25MCS042           HOSTNAME: ee28 
+ lic: HOSTID: "d85ed3efc19a"       PID:      217758 
+ lic: Using FLEXlm license file: 
+ lic: 26585@lshc 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 14-may-2025/2024.09 
+ lic: 181(in_use)/1100(total) FLOATING license(s) on SERVER 26585@lshc 
+ lic:   
+  
+  ******  Machine Information  ***********************************
+  CPU:
+  model name	: AMD EPYC 7713 64-Core Processor
+  cpu MHz	: 2000.000
+  
+  OS:
+  Linux version 3.10.0-1160.88.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Tue Mar 7 15:41:52 UTC 2023
+
+  ******  Loading Files  *****************************************
+  Loading 'SRAM_WNM_TT_DifWordline.sp '
+  Loading '/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/hspice.ini '
+  Loading '../../tech_file/7nm_TT.pm '
+  
+      
+             
+ Warning:'Floating bulk' occurs 1 times
+ Summary of floating bulk:
+ -----------------------
+ |Node      |Device    |
+ |----------+----------|
+ |x         |mpr       |
+ -----------------------
+              
+ ******  Options set in the netlist  ****************************
+ ingold  = 2         lis_new = 1         post    = binary    
+ probe   = 1         
+ search  = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/behave
+  
+  
+  ******  Summary of possible problems in netlist  ***************
+  Negative resistor :      0
+  Negative capacitor:      0
+  Negative inductor :      0
+  Unconnected node  :      0
+  Dangling terminal :      0
+  Source loop       :      0
+  
+  ******  Circuit Statistics  ************************************
+  Capacitors(total)   :       2
+     Coupling Capacitors :       0
+  VCVS                :       4
+  Voltage Sources     :       5
+  MOSFETs             :       6
+  Total # of Nodes    :      13
+  Total # of Elements :      17
+
+
+  
+  ******  Analysis Details  **************************************
+  Opening 'SRAM_WNM_TT_DifWordline.sw0' for output.
+  Waveform Format: POST=Binary, POST_VERSION=2013
+  100.00% Elapsed Sweep: 14143 Estimated Time Left: 0:00:00        
+  DC End
+ ******
+ .title write noise margin operation
+
+ ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
+ 
+  ******  Measured values for the netlist  ***********************
+ min_1= 5.5284e-01    at= 9.3219e-05
+             from= 0.0000e+00    to= 7.0000e-01
+ wnm= 3.9092e-01
+  dcop: begin dcop, cpu clock= 1.39E+00                                         
+                                                  
+  dcop: end dcop, cpu clock= 1.41E+00 peak memory=     406 mb tot_iter=      13 
+                                                  
+
+          ***** job concluded
+ ******  
+ .title write noise margin operation
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :   256
+  Actual Threads Count       :     1
+
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.03           1          13
+  dc sweep           1.10       14143       42432
+  readin             0.02
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        406.25 megabytes
+           total cpu time            1.24 seconds
+           total elapsed time        1.41 seconds
+           job started at     22:16:18 03/24/2025
+           job ended   at     22:16:19 03/24/2025
+  
+  ******  Machine Information  ***********************************
+  CPU:
+  model name	: AMD EPYC 7713 64-Core Processor
+  cpu MHz	: 2000.000
+  
+  OS:
+  Linux version 3.10.0-1160.88.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Tue Mar 7 15:41:52 UTC 2023
+
+  ******  Loading Files  *****************************************
+  Loading 'SRAM_WNM_TT_DifWordline.sp '
+  Loading '/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/hspice.ini '
+  Loading '../../tech_file/7nm_TT.pm '
+  
+      
+             
+ Warning:'Floating bulk' occurs 1 times
+ Summary of floating bulk:
+ -----------------------
+ |Node      |Device    |
+ |----------+----------|
+ |x         |mpr       |
+ -----------------------
+              
+ ******  Options set in the netlist  ****************************
+ ingold  = 2         lis_new = 1         post    = binary    
+ probe   = 1         
+ search  = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/behave
+  
+  ******  Analysis Details  **************************************
+  Opening 'SRAM_WNM_TT_DifWordline.sw1' for output.
+  Waveform Format: POST=Binary, POST_VERSION=2013
+  DC End
+ ******
+ .title write noise margin operation
+
+ ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
+ 
+  ******  Measured values for the netlist  ***********************
+ min_1= 4.8023e-01    at= 9.3219e-05
+             from= 0.0000e+00    to= 7.0000e-01
+ wnm= 3.3957e-01
+  dcop: begin dcop, cpu clock= 2.54E+00                                         
+                                                  
+  dcop: end dcop, cpu clock= 2.56E+00 peak memory=     406 mb tot_iter=       9 
+                                                  
+
+          ***** job concluded
+ ******  
+ .title write noise margin operation
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.03           1           9
+  dc sweep           1.03       14143       42432
+  readin             0.00
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        407.18 megabytes
+           total cpu time            1.15 seconds
+           total elapsed time        1.15 seconds
+           job started at     22:16:18 03/24/2025
+           job ended   at     22:16:20 03/24/2025
+  
+  ******  Machine Information  ***********************************
+  CPU:
+  model name	: AMD EPYC 7713 64-Core Processor
+  cpu MHz	: 2000.000
+  
+  OS:
+  Linux version 3.10.0-1160.88.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Tue Mar 7 15:41:52 UTC 2023
+
+  ******  Loading Files  *****************************************
+  Loading 'SRAM_WNM_TT_DifWordline.sp '
+  Loading '/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/hspice.ini '
+  Loading '../../tech_file/7nm_TT.pm '
+  
+      
+             
+ Warning:'Floating bulk' occurs 1 times
+ Summary of floating bulk:
+ -----------------------
+ |Node      |Device    |
+ |----------+----------|
+ |x         |mpr       |
+ -----------------------
+              
+ ******  Options set in the netlist  ****************************
+ ingold  = 2         lis_new = 1         post    = binary    
+ probe   = 1         
+ search  = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/behave
+  
+  ******  Analysis Details  **************************************
+  Opening 'SRAM_WNM_TT_DifWordline.sw2' for output.
+  Waveform Format: POST=Binary, POST_VERSION=2013
+  DC End
+ ******
+ .title write noise margin operation
+
+ ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
+ 
+  ******  Measured values for the netlist  ***********************
+ min_1= 4.1854e-01    at= 8.6932e-03
+             from= 0.0000e+00    to= 7.0000e-01
+ wnm= 2.9596e-01
+  dcop: begin dcop, cpu clock= 3.70E+00                                         
+                                                  
+  dcop: end dcop, cpu clock= 3.72E+00 peak memory=     406 mb tot_iter=      10 
+                                                  
+
+          ***** job concluded
+ ******  
+ .title write noise margin operation
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.03           1          10
+  dc sweep           1.03       14143       42431
+  readin             0.00
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        407.18 megabytes
+           total cpu time            1.15 seconds
+           total elapsed time        1.15 seconds
+           job started at     22:16:18 03/24/2025
+           job ended   at     22:16:21 03/24/2025
+  
+  ******  Machine Information  ***********************************
+  CPU:
+  model name	: AMD EPYC 7713 64-Core Processor
+  cpu MHz	: 2000.000
+  
+  OS:
+  Linux version 3.10.0-1160.88.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Tue Mar 7 15:41:52 UTC 2023
+
+  ******  Loading Files  *****************************************
+  Loading 'SRAM_WNM_TT_DifWordline.sp '
+  Loading '/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/hspice.ini '
+  Loading '../../tech_file/7nm_TT.pm '
+  
+      
+             
+ Warning:'Floating bulk' occurs 1 times
+ Summary of floating bulk:
+ -----------------------
+ |Node      |Device    |
+ |----------+----------|
+ |x         |mpr       |
+ -----------------------
+              
+ ******  Options set in the netlist  ****************************
+ ingold  = 2         lis_new = 1         post    = binary    
+ probe   = 1         
+ search  = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/behave
+  
+  ******  Analysis Details  **************************************
+  Opening 'SRAM_WNM_TT_DifWordline.sw3' for output.
+  Waveform Format: POST=Binary, POST_VERSION=2013
+  DC End
+ ******
+ .title write noise margin operation
+
+ ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
+ 
+  ******  Measured values for the netlist  ***********************
+ min_1= 3.2326e-01    at= 2.3759e-01
+             from= 0.0000e+00    to= 7.0000e-01
+ wnm= 2.2858e-01
+  dcop: begin dcop, cpu clock= 4.86E+00                                         
+                                                  
+  dcop: end dcop, cpu clock= 4.88E+00 peak memory=     406 mb tot_iter=      10 
+                                                  
+
+          ***** job concluded
+ ******  
+ .title write noise margin operation
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.03           1          10
+  dc sweep           1.03       14143       42431
+  readin             0.00
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        407.18 megabytes
+           total cpu time            1.16 seconds
+           total elapsed time        1.16 seconds
+           job started at     22:16:18 03/24/2025
+           job ended   at     22:16:22 03/24/2025
+  
+  ******  Machine Information  ***********************************
+  CPU:
+  model name	: AMD EPYC 7713 64-Core Processor
+  cpu MHz	: 2000.000
+  
+  OS:
+  Linux version 3.10.0-1160.88.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Tue Mar 7 15:41:52 UTC 2023
+
+  ******  Loading Files  *****************************************
+  Loading 'SRAM_WNM_TT_DifWordline.sp '
+  Loading '/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/hspice.ini '
+  Loading '../../tech_file/7nm_TT.pm '
+  
+      
+             
+ Warning:'Floating bulk' occurs 1 times
+ Summary of floating bulk:
+ -----------------------
+ |Node      |Device    |
+ |----------+----------|
+ |x         |mpr       |
+ -----------------------
+              
+ ******  Options set in the netlist  ****************************
+ ingold  = 2         lis_new = 1         post    = binary    
+ probe   = 1         
+ search  = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/behave
+  
+  ******  Analysis Details  **************************************
+  Opening 'SRAM_WNM_TT_DifWordline.sw4' for output.
+  Waveform Format: POST=Binary, POST_VERSION=2013
+  DC End
+ ******
+ 
+
+ ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
+ 
+  ******  Measured values for the netlist  ***********************
+ min_1=-2.0674e-03    at= 2.7409e-01
+             from= 0.0000e+00    to= 7.0000e-01
+ wnm=-1.4619e-03
+  dcop: begin dcop, cpu clock= 6.03E+00                                         
+                                                  
+  dcop: end dcop, cpu clock= 6.05E+00 peak memory=     406 mb tot_iter=       9 
+                                                  
+
+          ***** job concluded
+ ******  
+ 
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.03           1           9
+  dc sweep           1.04       14143       42435
+  readin             0.00
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        407.18 megabytes
+           total cpu time            1.16 seconds
+           total elapsed time        1.17 seconds
+           job started at     22:16:18 03/24/2025
+           job ended   at     22:16:24 03/24/2025
+           job total runtime         6.05 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.16(s)

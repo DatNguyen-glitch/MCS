@@ -1,0 +1,25 @@
+* "simulator" "HSPICE" 
+* "version" "Q-2020.03-SP2-2 linux64"
+* "format" "HSP"
+* "rundate" "16:06:30 03/27/2025 "
+* "netlist" "SRAM_SNM_TT_DifWordline.sp "
+* "runtitle" ".title noise margin in hold operation"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ bl = 700.0000m       
++ blb = 700.0000m       
++ gl = 369.4117m       
++ gr = 369.4117m       
++ q = 369.4117m       
++ qb = 369.4117m       
++ u =   0.            
++ v1 = 522.4270m       
++ v2 = 522.4270m       
++ vdd = 700.0000m       
++ wl = 600.0000m       
++ x = 628.0647m       
+***   END: Saved Operating Point ***                     
