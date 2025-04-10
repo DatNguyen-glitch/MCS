@@ -2,19 +2,13 @@
 
 module decoder_6to64(
    input clk,
-   input rst_n,
    input [5:0] in_addr,
 	output [63:0] wordline
 );
 
-   reg [5:0] addr;
+   wire [5:0] addr;
    
-   always @(posedge clk or negedge rst_n) begin
-      if (!rst_n)
-         addr <= 6'd0;
-      else
-         addr <= in_addr;
-   end
+   assign addr = in_addr;
    
    //Split addresses into 2 parts
    wire [2:0] msb, lsb;
@@ -47,7 +41,7 @@ module decoder_6to64(
    endgenerate
    
    //Assign the final output
-   assign wordline = wl_temp;
+   assign wordline = clk? ~wl_temp : 64'd0;
 
 endmodule
 

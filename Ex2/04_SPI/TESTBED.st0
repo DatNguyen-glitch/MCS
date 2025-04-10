@@ -1,0 +1,56 @@
+****** HSPICE -- Q-2020.03-SP2-2 linux64 (Nov  1 2020) ******
+Input File: TESTBED.sp
+lic:
+lic: FLEXlm: SDK_12.6
+lic: USER:   es25MCS042           HOSTNAME: ee28
+lic: HOSTID: "d85ed3efc199"       PID:      107990
+lic: Using FLEXlm license file:
+lic: 26585@lstc
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 14-may-2025/2023.12
+lic: 264(in_use)/600(total) FLOATING license(s) on SERVER 26585@lstc
+lic:
+
+ init: begin read circuit files, cpu clock= 6.04E+01
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/ad
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/behave
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/bjt
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/burr_brn
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/comlinear
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/dio
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/fet
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/lin_tech
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/pci
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/signet
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/ti
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/tline
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/xilinx
+       option post
+       option probe
+       option runlvl =     3.00
+       option measform =     2.00
+       option vcd
+ init: end read circuit files, cpu clock= 6.04E+01 peak memory=     395 mb
+ init: begin check errors, cpu clock= 6.04E+01
+ init: end check errors, cpu clock= 6.04E+01 peak memory=     399 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 6.04E+01
+       establish matrix -- done, cpu clock= 6.04E+01 peak memory=     400 mb
+       re-order matrix -- done, cpu clock= 6.04E+01 peak memory=     400 mb
+ init: end setup matrix, cpu clock= 6.04E+01 peak memory=     400 mb
+ dcop: begin dcop, cpu clock= 6.04E+01
+ dcop: end dcop, cpu clock= 6.05E+01 peak memory=     401 mb tot_iter=      18
+ output: TESTBED.tr0
+ sweep: tran tran0    begin, stop_t=  6.00E-08 #sweeps=**** cpu clock= 6.05E+01
+ tran: time= 6.0000E-09 tot_iter=    2383 conv_iter=     777 cpu clock= 6.14E+01
+ tran: time= 1.2000E-08 tot_iter=    4645 conv_iter=    1514 cpu clock= 6.25E+01
+ tran: time= 1.8000E-08 tot_iter=    7034 conv_iter=    2292 cpu clock= 6.35E+01
+ tran: time= 2.4025E-08 tot_iter=    9479 conv_iter=    3082 cpu clock= 6.46E+01
+ tran: time= 3.0025E-08 tot_iter=   11962 conv_iter=    3890 cpu clock= 6.56E+01
+ tran: time= 3.6000E-08 tot_iter=   14429 conv_iter=    4682 cpu clock= 6.68E+01
+ tran: time= 4.2000E-08 tot_iter=   16763 conv_iter=    5446 cpu clock= 6.79E+01
+ tran: time= 4.8000E-08 tot_iter=   19278 conv_iter=    6264 cpu clock= 6.91E+01
+ tran: time= 5.4000E-08 tot_iter=   21728 conv_iter=    7055 cpu clock= 7.04E+01
+ tran: time= 6.0000E-08 tot_iter=   24186 conv_iter=    7842 cpu clock= 7.15E+01
+ sweep: tran tran0    end, cpu clock= 7.15E+01 peak memory=     401 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

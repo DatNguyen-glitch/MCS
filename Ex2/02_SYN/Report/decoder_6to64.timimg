@@ -1,0 +1,48 @@
+Error: Unit conflict found: Constraint time unit is 'ns'; main library time unit is 'ps'. (IFS-001)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : decoder_6to64
+Version: P-2019.03-SP1-1
+Date   : Thu Apr 10 13:28:27 2025
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_22b_INVBUF_SRAM_TT_170906
+Wire Load Model Mode: top
+
+  Startpoint: in_addr[5] (input port clocked by clk)
+  Endpoint: wordline[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                  400.00     400.00 r
+  in_addr[5] (in)                                         0.00     400.00 r
+  msb_decoder/a[2] (decoder_3to8_8)                       0.00     400.00 r
+  msb_decoder/U8/Y (INVx8_ASAP7_75t_SRAM)                 2.43     402.43 f
+  msb_decoder/U9/Y (NAND3x2_ASAP7_75t_SRAM)              14.24     416.67 r
+  msb_decoder/word[0] (decoder_3to8_8)                    0.00     416.67 r
+  U107/Y (NOR3xp33_ASAP7_75t_SRAM)                        9.07     425.74 f
+  wordline[0] (out)                                       0.00     425.74 f
+  data arrival time                                                425.74
+
+  clock clk (rise edge)                                 800.00     800.00
+  clock network delay (ideal)                             0.00     800.00
+  output external delay                                -400.00     400.00
+  data required time                                               400.00
+  --------------------------------------------------------------------------
+  data required time                                               400.00
+  data arrival time                                               -425.74
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -25.74
+
+
+1

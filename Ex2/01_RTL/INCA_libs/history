@@ -1,0 +1,8 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(10Apr2025:13:26:25):( irun ../00_TESTBED/decoder_6to64_tb.v -define RTL -debug -notimingchecks -loadpli1 debpli:novas_pli_boot )
+s2::(10Apr2025:13:27:09):( irun ../00_TESTBED/decoder_6to64_tb.v -define RTL -debug -notimingchecks -loadpli1 debpli:novas_pli_boot )
+s3::(10Apr2025:13:56:20):( irun ../00_TESTBED/decoder_6to64_tb.v -define RTL -debug -notimingchecks -loadpli1 debpli:novas_pli_boot )
+s4::(10Apr2025:13:59:57):( irun ../00_TESTBED/decoder_6to64_tb.v -define RTL -debug -notimingchecks -loadpli1 debpli:novas_pli_boot )

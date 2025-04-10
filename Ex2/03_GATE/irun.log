@@ -1,0 +1,376 @@
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s084: Started on Apr 10, 2025 at 13:36:58 CST
+irun
+	../00_TESTBED/decoder_6to64_tb.v
+	-define GATE
+	-debug
+	-v /RAID2/COURSE/2025_Spring/es25MCS/es25MCS042/tech_file/ASAP7_PDKandLIB_v1p5/asap7libs_24/verilog/asap7sc7p5t_24_SIMPLE_SRAM_TT.v
+	/RAID2/COURSE/2025_Spring/es25MCS/es25MCS042/tech_file/ASAP7_PDKandLIB_v1p5/asap7libs_24/verilog/asap7sc7p5t_24_SEQ_SRAM_TT.v
+	/RAID2/COURSE/2025_Spring/es25MCS/es25MCS042/tech_file/ASAP7_PDKandLIB_v1p5/asap7libs_24/verilog/asap7sc7p5t_24_INVBUF_SRAM_TT.v
+	-nontcglitch
+	-loadpli1 debpli:novas_pli_boot
+file: ../00_TESTBED/decoder_6to64_tb.v
+	module worklib.decoder_6to64:v
+		errors: 0, warnings: 0
+	module worklib.decoder_6to64_tb:v
+		errors: 0, warnings: 0
+file: /RAID2/COURSE/2025_Spring/es25MCS/es25MCS042/tech_file/ASAP7_PDKandLIB_v1p5/asap7libs_24/verilog/asap7sc7p5t_24_SEQ_SRAM_TT.v
+	module worklib.ASYNC_DFFHx1_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.DFFHQNx1_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.DFFHQNx2_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.DFFHQNx3_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.DFFHQx4_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.DFFLQNx1_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.DFFLQNx2_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.DFFLQNx3_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.DFFLQx4_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.DHLx1_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.DHLx2_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.DHLx3_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.DLLx1_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.DLLx2_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.DLLx3_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.ICGx1_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.ICGx2_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.ICGx3_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.SDFHx1_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.SDFHx2_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.SDFHx3_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.SDFHx4_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.SDFLx1_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.SDFLx2_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.SDFLx3_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.SDFLx4_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_latch:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_dff_err:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_dff:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_dff_r_err:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_dff_r:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_dff_s_err:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_dff_s:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_dff_sr_err:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_dff_sr_0:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_dff_sr_1:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_latch_r:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_latch_s:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_latch_sr_0:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_latch_sr_1:v
+		errors: 0, warnings: 0
+file: /RAID2/COURSE/2025_Spring/es25MCS/es25MCS042/tech_file/ASAP7_PDKandLIB_v1p5/asap7libs_24/verilog/asap7sc7p5t_24_INVBUF_SRAM_TT.v
+	module worklib.BUFx10_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.BUFx12_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.BUFx12f_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.BUFx16f_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.BUFx24_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.BUFx2_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.BUFx3_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.BUFx4_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.BUFx4f_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.BUFx5_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.BUFx6f_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.BUFx8_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.HB1xp67_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.HB2xp67_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.HB3xp67_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.HB4xp67_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.INVx11_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.INVx13_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.INVx1_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.INVx2_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.INVx3_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.INVx4_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.INVx5_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.INVx6_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.INVx8_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.INVxp33_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module worklib.INVxp67_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+file: /RAID2/COURSE/2025_Spring/es25MCS/es25MCS042/tech_file/ASAP7_PDKandLIB_v1p5/asap7libs_24/verilog/asap7sc7p5t_24_SIMPLE_SRAM_TT.v
+	module asap7sc7p5t_24_SIMPLE_SRAM_TT.NAND3xp33_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module asap7sc7p5t_24_SIMPLE_SRAM_TT.NAND4xp25_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module asap7sc7p5t_24_SIMPLE_SRAM_TT.NOR2xp33_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+	module asap7sc7p5t_24_SIMPLE_SRAM_TT.NOR2xp67_ASAP7_75t_SRAM:v
+		errors: 0, warnings: 0
+		Caching library 'asap7sc7p5t_24_SIMPLE_SRAM_TT' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		decoder_6to64_tb
+		ASYNC_DFFHx1_ASAP7_75t_SRAM
+		DFFHQNx1_ASAP7_75t_SRAM
+		DFFHQNx2_ASAP7_75t_SRAM
+		DFFHQNx3_ASAP7_75t_SRAM
+		DFFHQx4_ASAP7_75t_SRAM
+		DFFLQNx1_ASAP7_75t_SRAM
+		DFFLQNx2_ASAP7_75t_SRAM
+		DFFLQNx3_ASAP7_75t_SRAM
+		DFFLQx4_ASAP7_75t_SRAM
+		DHLx1_ASAP7_75t_SRAM
+		DHLx2_ASAP7_75t_SRAM
+		DHLx3_ASAP7_75t_SRAM
+		DLLx1_ASAP7_75t_SRAM
+		DLLx2_ASAP7_75t_SRAM
+		DLLx3_ASAP7_75t_SRAM
+		ICGx1_ASAP7_75t_SRAM
+		ICGx2_ASAP7_75t_SRAM
+		ICGx3_ASAP7_75t_SRAM
+		SDFHx1_ASAP7_75t_SRAM
+		SDFHx2_ASAP7_75t_SRAM
+		SDFHx3_ASAP7_75t_SRAM
+		SDFHx4_ASAP7_75t_SRAM
+		SDFLx1_ASAP7_75t_SRAM
+		SDFLx2_ASAP7_75t_SRAM
+		SDFLx3_ASAP7_75t_SRAM
+		SDFLx4_ASAP7_75t_SRAM
+		BUFx10_ASAP7_75t_SRAM
+		BUFx12_ASAP7_75t_SRAM
+		BUFx12f_ASAP7_75t_SRAM
+		BUFx16f_ASAP7_75t_SRAM
+		BUFx24_ASAP7_75t_SRAM
+		BUFx2_ASAP7_75t_SRAM
+		BUFx3_ASAP7_75t_SRAM
+		BUFx4_ASAP7_75t_SRAM
+		BUFx4f_ASAP7_75t_SRAM
+		BUFx5_ASAP7_75t_SRAM
+		BUFx6f_ASAP7_75t_SRAM
+		BUFx8_ASAP7_75t_SRAM
+		HB1xp67_ASAP7_75t_SRAM
+		HB2xp67_ASAP7_75t_SRAM
+		HB3xp67_ASAP7_75t_SRAM
+		HB4xp67_ASAP7_75t_SRAM
+		INVx11_ASAP7_75t_SRAM
+		INVx13_ASAP7_75t_SRAM
+		INVx1_ASAP7_75t_SRAM
+		INVx2_ASAP7_75t_SRAM
+		INVx3_ASAP7_75t_SRAM
+		INVx6_ASAP7_75t_SRAM
+		INVx8_ASAP7_75t_SRAM
+		INVxp33_ASAP7_75t_SRAM
+		INVxp67_ASAP7_75t_SRAM
+ncelab: *W,CUSFNF: The SDF file "../02_SYN/Netlist/decoder_SYN.sdf" not found..
+         $sdf_annotate("../02_SYN/Netlist/decoder_SYN.sdf", u_decoder);
+                     |
+ncelab: *W,CUSSTI (../00_TESTBED/decoder_6to64_tb.v,38|21): This SDF System Task will be Ignored..
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.ASYNC_DFFHx1_ASAP7_75t_SRAM:v <0x434437b4>
+			streams:   0, words:     0
+		worklib.DFFHQNx1_ASAP7_75t_SRAM:v <0x0347afdc>
+			streams:   0, words:     0
+		worklib.DFFHQNx2_ASAP7_75t_SRAM:v <0x49985469>
+			streams:   0, words:     0
+		worklib.DFFHQNx3_ASAP7_75t_SRAM:v <0x390200c5>
+			streams:   0, words:     0
+		worklib.DFFHQx4_ASAP7_75t_SRAM:v <0x6e032466>
+			streams:   0, words:     0
+		worklib.DFFLQNx1_ASAP7_75t_SRAM:v <0x1952462c>
+			streams:   0, words:     0
+		worklib.DFFLQNx2_ASAP7_75t_SRAM:v <0x3c734d45>
+			streams:   0, words:     0
+		worklib.DFFLQNx3_ASAP7_75t_SRAM:v <0x48f86941>
+			streams:   0, words:     0
+		worklib.DFFLQx4_ASAP7_75t_SRAM:v <0x68c37ce3>
+			streams:   0, words:     0
+		worklib.DHLx1_ASAP7_75t_SRAM:v <0x45d56f00>
+			streams:   0, words:     0
+		worklib.DHLx2_ASAP7_75t_SRAM:v <0x425bd2f9>
+			streams:   0, words:     0
+		worklib.DHLx3_ASAP7_75t_SRAM:v <0x2f83d620>
+			streams:   0, words:     0
+		worklib.DLLx1_ASAP7_75t_SRAM:v <0x629c5356>
+			streams:   0, words:     0
+		worklib.DLLx2_ASAP7_75t_SRAM:v <0x749cb108>
+			streams:   0, words:     0
+		worklib.DLLx3_ASAP7_75t_SRAM:v <0x69c17f4c>
+			streams:   0, words:     0
+		worklib.ICGx1_ASAP7_75t_SRAM:v <0x6c4ef321>
+			streams:   0, words:     0
+		worklib.ICGx2_ASAP7_75t_SRAM:v <0x6d670ae1>
+			streams:   0, words:     0
+		worklib.ICGx3_ASAP7_75t_SRAM:v <0x4cc482bd>
+			streams:   0, words:     0
+		worklib.SDFHx1_ASAP7_75t_SRAM:v <0x05f8cf6e>
+			streams:   0, words:     0
+		worklib.SDFHx2_ASAP7_75t_SRAM:v <0x24c9ef4d>
+			streams:   0, words:     0
+		worklib.SDFHx3_ASAP7_75t_SRAM:v <0x3cef4201>
+			streams:   0, words:     0
+		worklib.SDFHx4_ASAP7_75t_SRAM:v <0x66abaf0b>
+			streams:   0, words:     0
+		worklib.SDFLx1_ASAP7_75t_SRAM:v <0x1e2d0fbf>
+			streams:   0, words:     0
+		worklib.SDFLx2_ASAP7_75t_SRAM:v <0x41c8798e>
+			streams:   0, words:     0
+		worklib.SDFLx3_ASAP7_75t_SRAM:v <0x1bc93bef>
+			streams:   0, words:     0
+		worklib.SDFLx4_ASAP7_75t_SRAM:v <0x7758421b>
+			streams:   0, words:     0
+		worklib.decoder_6to64_tb:v <0x03710bdd>
+			streams:   8, words:  8351
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                 155      59
+		UDPs:                     43      14
+		Primitives:              579       4
+		Timing outputs:          153      16
+		Registers:                31      45
+		Scalar wires:            299       -
+		Expanded wires:            6       1
+		Initial blocks:            5       5
+		Pseudo assignments:        3       3
+		Timing checks:           513       -
+		Delayed tcheck signals:   73      73
+		Simulation timescale:    1ps
+	Writing initial simulation snapshot: worklib.decoder_6to64_tb:v
+Loading snapshot worklib.decoder_6to64_tb:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_P-2019.06, Linux x86_64/64bit, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'decoder_SYN.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+=== Simulation of dec_6to64 ===
+ADDR | Wordline (only 1 bit should be HIGH)
+   0  | 0000000000000000000000000000000000000000000000000000000000000001
+   1  | 0000000000000000000000000000000000000000000000000000000000000010
+   2  | 0000000000000000000000000000000000000000000000000000000000000100
+   3  | 0000000000000000000000000000000000000000000000000000000000001000
+   4  | 0000000000000000000000000000000000000000000000000000000000010000
+   5  | 0000000000000000000000000000000000000000000000000000000000100000
+   6  | 0000000000000000000000000000000000000000000000000000000001000000
+   7  | 0000000000000000000000000000000000000000000000000000000010000000
+   8  | 0000000000000000000000000000000000000000000000000000000100000000
+   9  | 0000000000000000000000000000000000000000000000000000001000000000
+  10  | 0000000000000000000000000000000000000000000000000000010000000000
+  11  | 0000000000000000000000000000000000000000000000000000100000000000
+  12  | 0000000000000000000000000000000000000000000000000001000000000000
+  13  | 0000000000000000000000000000000000000000000000000010000000000000
+  14  | 0000000000000000000000000000000000000000000000000100000000000000
+  15  | 0000000000000000000000000000000000000000000000001000000000000000
+  16  | 0000000000000000000000000000000000000000000000010000000000000000
+  17  | 0000000000000000000000000000000000000000000000100000000000000000
+  18  | 0000000000000000000000000000000000000000000001000000000000000000
+  19  | 0000000000000000000000000000000000000000000010000000000000000000
+  20  | 0000000000000000000000000000000000000000000100000000000000000000
+  21  | 0000000000000000000000000000000000000000001000000000000000000000
+  22  | 0000000000000000000000000000000000000000010000000000000000000000
+  23  | 0000000000000000000000000000000000000000100000000000000000000000
+  24  | 0000000000000000000000000000000000000001000000000000000000000000
+  25  | 0000000000000000000000000000000000000010000000000000000000000000
+  26  | 0000000000000000000000000000000000000100000000000000000000000000
+  27  | 0000000000000000000000000000000000001000000000000000000000000000
+  28  | 0000000000000000000000000000000000010000000000000000000000000000
+  29  | 0000000000000000000000000000000000100000000000000000000000000000
+  30  | 0000000000000000000000000000000001000000000000000000000000000000
+  31  | 0000000000000000000000000000000010000000000000000000000000000000
+  32  | 0000000000000000000000000000000100000000000000000000000000000000
+  33  | 0000000000000000000000000000001000000000000000000000000000000000
+  34  | 0000000000000000000000000000010000000000000000000000000000000000
+  35  | 0000000000000000000000000000100000000000000000000000000000000000
+  36  | 0000000000000000000000000001000000000000000000000000000000000000
+  37  | 0000000000000000000000000010000000000000000000000000000000000000
+  38  | 0000000000000000000000000100000000000000000000000000000000000000
+  39  | 0000000000000000000000001000000000000000000000000000000000000000
+  40  | 0000000000000000000000010000000000000000000000000000000000000000
+  41  | 0000000000000000000000100000000000000000000000000000000000000000
+  42  | 0000000000000000000001000000000000000000000000000000000000000000
+  43  | 0000000000000000000010000000000000000000000000000000000000000000
+  44  | 0000000000000000000100000000000000000000000000000000000000000000
+  45  | 0000000000000000001000000000000000000000000000000000000000000000
+  46  | 0000000000000000010000000000000000000000000000000000000000000000
+  47  | 0000000000000000100000000000000000000000000000000000000000000000
+  48  | 0000000000000001000000000000000000000000000000000000000000000000
+  49  | 0000000000000010000000000000000000000000000000000000000000000000
+  50  | 0000000000000100000000000000000000000000000000000000000000000000
+  51  | 0000000000001000000000000000000000000000000000000000000000000000
+  52  | 0000000000010000000000000000000000000000000000000000000000000000
+  53  | 0000000000100000000000000000000000000000000000000000000000000000
+  54  | 0000000001000000000000000000000000000000000000000000000000000000
+  55  | 0000000010000000000000000000000000000000000000000000000000000000
+  56  | 0000000100000000000000000000000000000000000000000000000000000000
+  57  | 0000001000000000000000000000000000000000000000000000000000000000
+  58  | 0000010000000000000000000000000000000000000000000000000000000000
+  59  | 0000100000000000000000000000000000000000000000000000000000000000
+  60  | 0001000000000000000000000000000000000000000000000000000000000000
+  61  | 0010000000000000000000000000000000000000000000000000000000000000
+  62  | 0100000000000000000000000000000000000000000000000000000000000000
+  63  | 1000000000000000000000000000000000000000000000000000000000000000
+Simulation complete via $finish(1) at time 66 NS + 0
+../00_TESTBED/decoder_6to64_tb.v:69       $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s084: Exiting on Apr 10, 2025 at 13:36:59 CST  (total: 00:00:01)

@@ -14,14 +14,12 @@ module decoder_6to64_tb;
    real CLK_PRD = `CLK_TIME;
    // Testbench signals
    reg clk;
-   reg rst_n;
    reg  [5:0] addr;
    wire [63:0] wordline;
 
    // Instantiate the decoder
    decoder_6to64 u_decoder (
       .clk(clk)
-      ,.rst_n(rst_n)
       ,.in_addr(addr)
       ,.wordline(wordline)
    );
@@ -49,15 +47,10 @@ module decoder_6to64_tb;
       #(0.5*CLK_PRD) clk = ~clk; 
       end
    end
-   initial begin
-      rst_n = 1;
-      #(0.5*CLK_PRD) rst_n = 0;
-      #(2*CLK_PRD) rst_n = 1;
-   end
 
    initial begin
       $display("=== Simulation of dec_6to64 ===");
-      $display("ADDR | Wordline (only 1 bit should be LOW)");
+      $display("ADDR | Wordline (only 1 bit should be HIGH)");
       #(2*CLK_PRD)
       // Loop through all 64 address values
       for (i = 0; i < 64; i = i + 1) begin
