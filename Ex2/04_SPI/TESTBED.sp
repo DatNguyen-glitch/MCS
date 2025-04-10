@@ -117,7 +117,9 @@ C_load63 wl[63] GND 12fF
 .probe tran v(*) level=1
 
 * .meas TRAN P_MAX MAX p(X_compressor_1) from=0.5n to=55n
-* .meas TRAN P_AVG AVG p(X_compressor_1) from=0 to=12n
+.meas TRAN P_AVG AVG p(x_decoder) from=0 to=60n
+* .CHECK EDGE (PATN[0] RISE 0ns 3ns RISE) wl[1]
+.MEASURE TRAN delay TRIG V(clk) VAL=0.35 RISE=3 TARG V(WL[1]) VAL=0.35 RISE=1
 
 .option VCD
 .LPRINT (0.31 0.32) v(PATN[5]) v(PATN[4]) v(PATN[3]) v(PATN[2]) v(PATN[1]) v(PATN[0])

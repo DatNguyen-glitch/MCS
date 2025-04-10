@@ -1,0 +1,310 @@
+### Custom WaveView ADV log file, revision T-2022.06 (build May 21, ) ###
+### created at 20:08:47 on Thu Apr 10 2025 (Linux AMD64) ###
+### Host Name: ee28   User ID:    PID: 160308   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+wv_move_window {Custom WaveView} {} 0 28
+wv_select_window {Custom WaveView} 
+wv_press_tool_button {Custom WaveView} {} {RecentFile0} 
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:TESTBED.tr0(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:TESTBED.tr0(0)} {0} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:TESTBED.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(clk)} 2
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(clk)} 2
+wv_select_list_item {Custom WaveView} {} {sigview} {v(wl[1])} 21
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(wl[1])} 21
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.YAXIS1
+wv_drag_item_to WV1 144 34
+wv_zoom_y WV1.PANEL1:1 0.701966 0.719663
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 0 0.698034
+wv_drag_item_to WV1 139 37
+wv_zoom_y WV1.PANEL1:1 0.698034 0.751124
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_select_list_item {Custom WaveView} {} {sigview} {v(clk)} 2
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(clk)} 2
+wv_select_list_item {Custom WaveView} {} {sigview} {v(wl[1])} 21
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(wl[1])} 21
+wv_select_waveview 1 {waveview 1}
+wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Browser} 
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 1.89723e-09 0.698034
+wv_drag_item_to WV1 195 38
+wv_zoom WV1.PANEL1:1 1.89723e-09 0.698034 4.60757e-09 -0.0373595
+wv_select_menu_item {Custom WaveView} {} {AxisCursor.Add Cursor} 
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 2.02443e-09 0.342502
+wv_drag_item_to WV1 258 200
+wv_select_panel WV1.PANEL1:1 2.02602e-09 0.342502 btnup
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 258 199
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 258 199
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSORX1
+wv_drag_item_to WV1 258 190
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 252 203
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 256 205
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 259 205
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 259 205
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 261 198
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 254 198
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 255 204
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_drag_item_to WV1 258 242
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 258 242
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_drag_item_to WV1 256 243
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 256 247
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_drag_item_to WV1 257 255
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 258 255
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_drag_item_to WV1 254 256
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 258 259
+wv_select_menu_item {Custom WaveView} {} {AxisCursor.Add H-Cursor} 
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSOR2
+wv_move_wv_item WV1.PANEL1:1.CURSOR2 419 206
+wv_press_key Delete 424 370
+wv_move_window {Confirmation} {} 854 467
+wv_move_window {Confirmation} {} 864 471
+wv_select_dialog {Confirmation} 
+wv_close_dialog {Confirmation} 
+wv_select_window {Custom WaveView} 
+wv_select_waveview 1 {waveview 1}
+wv_waveview_context_menu WV1.PANEL1:1.CURSOR2
+wv_select_waveview 1 {waveview 1}
+wv_select_menu_item {Custom WaveView} {waveview 1:1} {HairPopMenu.Delete} 
+wv_select_menu_item {Custom WaveView} {} {AxisCursor.Add Cursor} 
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL2:1 2.11515e-09 0.338402
+wv_select_panel WV1.PANEL2:1 2.11515e-09 0.338402 btnup
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL2:1.CURSOR2
+wv_drag_item_to WV1 310 573
+wv_move_wv_item WV1.PANEL2:1.CURSOR2 311 563
+wv_select_window {Custom WaveView} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL2:1 1.16206e-08 0.548098
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 1.6262e-09 0.619382
+wv_drag_item_to WV1 176 65
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 1.93111e-09 0.639045
+wv_select_panel WV1.PANEL1:1 1.93111e-09 0.639045 btnup
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 1.55844e-09 0.703933
+wv_drag_item_to WV1 179 47
+wv_zoom WV1.PANEL1:1 1.55844e-09 0.703933 3.8961e-09 -0.0570225
+wv_select_menu_item {Custom WaveView} {} {AxisCursor.Add Cursor} 
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 2.02843e-09 0.338002
+wv_select_panel WV1.PANEL1:1 2.02843e-09 0.338002 btnup
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_drag_item_to WV1 513 201
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 513 201
+wv_select_menu_item {Custom WaveView} {} {AxisCursor.Add Cursor} 
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL2:1 2.09569e-09 0.26125
+wv_drag_item_to WV1 568 612
+wv_select_panel WV1.PANEL2:1 2.09981e-09 0.259272 btnup
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL2:1 2.10942e-09 0.328511
+wv_drag_item_to WV1 576 577
+wv_select_panel WV1.PANEL2:1 2.11079e-09 0.328511 btnup
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL2:1.CURSOR2
+wv_move_wv_item WV1.PANEL2:1.CURSOR2 573 574
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL2:1.CURSOR2
+wv_drag_item_to WV1 574 564
+wv_move_wv_item WV1.PANEL2:1.CURSOR2 574 564
+wv_select_window {Custom WaveView} 
+wv_press_tool_button {Custom WaveView} {} {WaveformRedo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_select_waveview 1 {waveview 1}
+wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Browser} 
+wv_select_window {Custom WaveView} 
+wv_select_list_item {Custom WaveView} {} {sigview} {v(clk)} 2
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(clk)} 2
+wv_move_window {Confirmation} {} 621 464
+wv_select_dialog {Confirmation} 
+wv_press_button {Confirmation} {} {Ok} 
+wv_drag_tree_item {Custom WaveView} {} {hierview} {D0:TESTBED.tr0(0)@toplevel(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:TESTBED.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(patn[0])} 3
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(patn[0])} 3
+wv_select_list_item {Custom WaveView} {} {sigview} {v(patn[1])} 4
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(patn[1])} 4
+wv_select_list_item {Custom WaveView} {} {sigview} {v(patn[2])} 5
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(patn[2])} 5
+wv_select_list_item {Custom WaveView} {} {sigview} {v(patn[3])} 6
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(patn[3])} 6
+wv_select_list_item {Custom WaveView} {} {sigview} {v(patn[4])} 7
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(patn[4])} 7
+wv_select_list_item {Custom WaveView} {} {sigview} {v(patn[5])} 8
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(patn[5])} 8
+wv_select_list_item {Custom WaveView} {} {sigview} {v(wl[0])} 10
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(wl[0])} 10
+wv_move_scrollbar {Custom WaveView} {} {sigview.HScrolBar} {20}
+wv_move_scrollbar {Custom WaveView} {} {sigview.HScrolBar} {25}
+wv_move_scrollbar {Custom WaveView} {} {sigview.HScrolBar} {38}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(wl[1])} 21
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(wl[1])} 21
+wv_select_list_item {Custom WaveView} {} {sigview} {v(wl[2])} 32
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(wl[2])} 32
+wv_move_scrollbar {Custom WaveView} {} {sigview.HScrolBar} {52}
+wv_move_scrollbar {Custom WaveView} {} {sigview.HScrolBar} {72}
+wv_move_scrollbar {Custom WaveView} {} {sigview.HScrolBar} {78}
+wv_move_scrollbar {Custom WaveView} {} {sigview.HScrolBar} {88}
+wv_move_scrollbar {Custom WaveView} {} {sigview.HScrolBar} {99}
+wv_move_scrollbar {Custom WaveView} {} {sigview.HScrolBar} {101}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(wl[3])} 43
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(wl[3])} 43
+wv_select_list_item {Custom WaveView} {} {sigview} {v(wl[4])} 54
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(wl[4])} 54
+wv_move_scrollbar {Custom WaveView} {} {sigview.HScrolBar} {114}
+wv_move_scrollbar {Custom WaveView} {} {sigview.HScrolBar} {137}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(wl[5])} 44
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(wl[5])} 44
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(wl[5])} 44
+wv_select_list_item {Custom WaveView} {} {sigview} {v(wl[6])} 49
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(wl[6])} 49
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(wl[6])} 49
+wv_select_list_item {Custom WaveView} {} {sigview} {v(wl[7])} 50
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(wl[7])} 50
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(wl[7])} 50
+wv_select_list_item {Custom WaveView} {} {sigview} {v(wl[8])} 51
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(wl[8])} 51
+wv_select_list_item {Custom WaveView} {} {sigview} {v(wl[9])} 52
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(wl[9])} 52
+wv_select_menu_item {Custom WaveView} {} {AxisGrid.All Grid Off} 
+wv_select_waveview 1 {waveview 1}
+wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Browser} 
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 8.80858e-10 0.720588
+wv_drag_item_to WV1 162 33
+wv_zoom WV1.PANEL1:1 8.80858e-10 0.720588 3.4218e-08 -9.36765
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 1.5906e-09 -3.12647
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 1.06413e-09 -0.964706
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 9.13706e-10 -4.80784
+wv_drag_item_to WV1 131 49
+wv_zoom_y WV1.PANEL1:1 -4.80784 -5.52843
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 9.70114e-10 1.43725
+wv_drag_item_to WV1 147 29
+wv_zoom WV1.PANEL1:1 9.70114e-10 1.43725 1.98546e-09 -6.00882
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL13:1.HEIGHT
+wv_drag_item_to WV1 137 571
+wv_set_size WV1.PANEL13:1.HEIGHT 36
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 1.93111e-09 0.761765
+wv_select_waveview 1 {waveview 1}
+wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Zoom Mode} 
+wv_select_waveview 1 {waveview 1}
+wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Zoom In} 
+wv_select_waveview 1 {waveview 1}
+wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Zoom Mode} 
+wv_select_waveview 1 {waveview 1}
+wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Zoom Out} 
+wv_select_waveview 1 {waveview 1}
+wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Zoom Out} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformRedo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformRedo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformRedo0} 
+wv_select_waveview 1 {waveview 1}
+wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Zoom Mode} 
+wv_select_waveview 1 {waveview 1}
+wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Full Unzoom} 
+wv_set_text {Custom WaveView} {} {XValue} "02"
+wv_press_key_text {Custom WaveView} {} {XValue} {Return}
+wv_set_text {Custom WaveView} {} {XValue} "0"
+wv_press_key_text {Custom WaveView} {} {XValue} {Return}
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_set_text {Custom WaveView} {} {XValue} "0"
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 8.80858e-10 0.741176
+wv_drag_item_to WV1 154 22
+wv_zoom WV1.PANEL1:1 8.80858e-10 0.741176 3.40486e-08 -0.947059
+wv_press_key "S" 1439 -65
+wv_select_window {Custom WaveView} 
+wv_press_key "S" 1355 -21
+wv_press_key "S" 1487 -61
+wv_press_key "S" 1487 -61
+wv_press_key "S" 928 323
+wv_press_key "S" 920 298
+wv_press_key "S" 1129 92
+wv_press_key "S" 1164 5
+wv_press_key "S" 933 334

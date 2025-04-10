@@ -17,3 +17,4 @@ clean:
 	rm -rf *-verilog.* 
 	rm -rf *.mr
 	rm -rf diff_syn
+	rm -rf *.txt
