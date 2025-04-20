@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='Q-2020.03-SP2-2 linux64' PARAM_COUNT=0
+.TITLE '.tile sense amplifier testbed'
+ avg_power_x_pre  avg_power_x_sa_current avg_power_x_sa_vol_pre
+ avg_power_x_sram_arr0 temper           alter#          
+  1.645e-06        2.354e-07          failed         3.591e-06      
+   25.0000        1               

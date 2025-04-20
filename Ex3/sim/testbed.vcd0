@@ -1,0 +1,682 @@
+$date
+	April 20, 2025	15:33:19
+$end
+
+$version
+	HSPICE Q-2020.03-SP2-2
+$end
+
+$timescale
+   1ps
+$end
+
+$scope module toplevel $end
+$var reg 1 ! clk $end
+$var reg 1 " wl[0] $end
+$var reg 1 # wl[1] $end
+$var reg 1 $ wl[2] $end
+$var reg 1 % wl[3] $end
+$var reg 1 & wl[4] $end
+$var reg 1 ' wl[5] $end
+$var reg 1 ( wl[6] $end
+$var reg 1 ) wl[7] $end
+$var reg 1 * wl[8] $end
+$var reg 1 + wl[9] $end
+$var reg 1 , wl[10] $end
+$var reg 1 - wl[11] $end
+$var reg 1 . wl[12] $end
+$var reg 1 / wl[13] $end
+$var reg 1 0 wl[14] $end
+$var reg 1 1 wl[15] $end
+$var reg 1 2 wl[16] $end
+$var reg 1 3 wl[17] $end
+$var reg 1 4 wl[18] $end
+$var reg 1 5 wl[19] $end
+$var reg 1 6 wl[20] $end
+$var reg 1 7 wl[21] $end
+$var reg 1 8 wl[22] $end
+$var reg 1 9 wl[23] $end
+$var reg 1 : wl[24] $end
+$var reg 1 ; wl[25] $end
+$var reg 1 < wl[26] $end
+$var reg 1 = wl[27] $end
+$var reg 1 > wl[28] $end
+$var reg 1 ? wl[29] $end
+$var reg 1 @ wl[30] $end
+$var reg 1 A wl[31] $end
+$var reg 1 B wl[32] $end
+$var reg 1 C wl[33] $end
+$var reg 1 D wl[34] $end
+$var reg 1 E wl[35] $end
+$var reg 1 F wl[36] $end
+$var reg 1 G wl[37] $end
+$var reg 1 H wl[38] $end
+$var reg 1 I wl[39] $end
+$var reg 1 J wl[40] $end
+$var reg 1 K wl[41] $end
+$var reg 1 L wl[42] $end
+$var reg 1 M wl[43] $end
+$var reg 1 N wl[44] $end
+$var reg 1 O wl[45] $end
+$var reg 1 P wl[46] $end
+$var reg 1 Q wl[47] $end
+$var reg 1 R wl[48] $end
+$var reg 1 S wl[49] $end
+$var reg 1 T wl[50] $end
+$var reg 1 U wl[51] $end
+$var reg 1 V wl[52] $end
+$var reg 1 W wl[53] $end
+$var reg 1 X wl[54] $end
+$var reg 1 Y wl[55] $end
+$var reg 1 Z wl[56] $end
+$var reg 1 [ wl[57] $end
+$var reg 1 \ wl[58] $end
+$var reg 1 ] wl[59] $end
+$var reg 1 ^ wl[60] $end
+$var reg 1 _ wl[61] $end
+$var reg 1 ` wl[62] $end
+$var reg 1 a wl[63] $end
+$var reg 1 b wl[64] $end
+$var reg 1 c wl[65] $end
+$var reg 1 d wl[66] $end
+$var reg 1 e wl[67] $end
+$var reg 1 f wl[68] $end
+$var reg 1 g wl[69] $end
+$var reg 1 h wl[70] $end
+$var reg 1 i wl[71] $end
+$var reg 1 j wl[72] $end
+$var reg 1 k wl[73] $end
+$var reg 1 l wl[74] $end
+$var reg 1 m wl[75] $end
+$var reg 1 n wl[76] $end
+$var reg 1 o wl[77] $end
+$var reg 1 p wl[78] $end
+$var reg 1 q wl[79] $end
+$var reg 1 r wl[80] $end
+$var reg 1 s wl[81] $end
+$var reg 1 t wl[82] $end
+$var reg 1 u wl[83] $end
+$var reg 1 v wl[84] $end
+$var reg 1 w wl[85] $end
+$var reg 1 x wl[86] $end
+$var reg 1 y wl[87] $end
+$var reg 1 z wl[88] $end
+$var reg 1 { wl[89] $end
+$var reg 1 | wl[90] $end
+$var reg 1 } wl[91] $end
+$var reg 1 ~ wl[92] $end
+$var reg 1 !! wl[93] $end
+$var reg 1 !" wl[94] $end
+$var reg 1 !# wl[95] $end
+$var reg 1 !$ wl[96] $end
+$var reg 1 !% wl[97] $end
+$var reg 1 !& wl[98] $end
+$var reg 1 !' wl[99] $end
+$var reg 1 !( wl[100] $end
+$var reg 1 !) wl[101] $end
+$var reg 1 !* wl[102] $end
+$var reg 1 !+ wl[103] $end
+$var reg 1 !, wl[104] $end
+$var reg 1 !- wl[105] $end
+$var reg 1 !. wl[106] $end
+$var reg 1 !/ wl[107] $end
+$var reg 1 !0 wl[108] $end
+$var reg 1 !1 wl[109] $end
+$var reg 1 !2 wl[110] $end
+$var reg 1 !3 wl[111] $end
+$var reg 1 !4 wl[112] $end
+$var reg 1 !5 wl[113] $end
+$var reg 1 !6 wl[114] $end
+$var reg 1 !7 wl[115] $end
+$var reg 1 !8 wl[116] $end
+$var reg 1 !9 wl[117] $end
+$var reg 1 !: wl[118] $end
+$var reg 1 !; wl[119] $end
+$var reg 1 !< wl[120] $end
+$var reg 1 != wl[121] $end
+$var reg 1 !> wl[122] $end
+$var reg 1 !? wl[123] $end
+$var reg 1 !@ wl[124] $end
+$var reg 1 !A wl[125] $end
+$var reg 1 !B wl[126] $end
+$var reg 1 !C wl[127] $end
+$var reg 1 !D in[0] $end
+$var reg 1 !E in[1] $end
+$var reg 1 !F in[2] $end
+$var reg 1 !G in[3] $end
+$var reg 1 !H in[4] $end
+$var reg 1 !I in[5] $end
+$var reg 1 !J in[6] $end
+$var reg 1 !K in[7] $end
+$var reg 1 !L in[8] $end
+$var reg 1 !M in[9] $end
+$var reg 1 !N in[10] $end
+$var reg 1 !O in[11] $end
+$var reg 1 !P in[12] $end
+$var reg 1 !Q in[13] $end
+$var reg 1 !R in[14] $end
+$var reg 1 !S in[15] $end
+$var reg 1 !T in[16] $end
+$var reg 1 !U in[17] $end
+$var reg 1 !V in[18] $end
+$var reg 1 !W in[19] $end
+$var reg 1 !X in[20] $end
+$var reg 1 !Y in[21] $end
+$var reg 1 !Z in[22] $end
+$var reg 1 ![ in[23] $end
+$var reg 1 !\ in[24] $end
+$var reg 1 !] in[25] $end
+$var reg 1 !^ in[26] $end
+$var reg 1 !_ in[27] $end
+$var reg 1 !` in[28] $end
+$var reg 1 !a in[29] $end
+$var reg 1 !b in[30] $end
+$var reg 1 !c in[31] $end
+$var reg 1 !d in[32] $end
+$var reg 1 !e in[33] $end
+$var reg 1 !f in[34] $end
+$var reg 1 !g in[35] $end
+$var reg 1 !h in[36] $end
+$var reg 1 !i in[37] $end
+$var reg 1 !j in[38] $end
+$var reg 1 !k in[39] $end
+$var reg 1 !l in[40] $end
+$var reg 1 !m in[41] $end
+$var reg 1 !n in[42] $end
+$var reg 1 !o in[43] $end
+$var reg 1 !p in[44] $end
+$var reg 1 !q in[45] $end
+$var reg 1 !r in[46] $end
+$var reg 1 !s in[47] $end
+$var reg 1 !t in[48] $end
+$var reg 1 !u in[49] $end
+$var reg 1 !v in[50] $end
+$var reg 1 !w in[51] $end
+$var reg 1 !x in[52] $end
+$var reg 1 !y in[53] $end
+$var reg 1 !z in[54] $end
+$var reg 1 !{ in[55] $end
+$var reg 1 !| in[56] $end
+$var reg 1 !} in[57] $end
+$var reg 1 !~ in[58] $end
+$var reg 1 "! in[59] $end
+$var reg 1 "" in[60] $end
+$var reg 1 "# in[61] $end
+$var reg 1 "$ in[62] $end
+$var reg 1 "% in[63] $end
+$var reg 1 "& in[64] $end
+$var reg 1 "' in[65] $end
+$var reg 1 "( in[66] $end
+$var reg 1 ") in[67] $end
+$var reg 1 "* in[68] $end
+$var reg 1 "+ in[69] $end
+$var reg 1 ", in[70] $end
+$var reg 1 "- in[71] $end
+$var reg 1 ". in[72] $end
+$var reg 1 "/ in[73] $end
+$var reg 1 "0 in[74] $end
+$var reg 1 "1 in[75] $end
+$var reg 1 "2 in[76] $end
+$var reg 1 "3 in[77] $end
+$var reg 1 "4 in[78] $end
+$var reg 1 "5 in[79] $end
+$var reg 1 "6 in[80] $end
+$var reg 1 "7 in[81] $end
+$var reg 1 "8 in[82] $end
+$var reg 1 "9 in[83] $end
+$var reg 1 ": in[84] $end
+$var reg 1 "; in[85] $end
+$var reg 1 "< in[86] $end
+$var reg 1 "= in[87] $end
+$var reg 1 "> in[88] $end
+$var reg 1 "? in[89] $end
+$var reg 1 "@ in[90] $end
+$var reg 1 "A in[91] $end
+$var reg 1 "B in[92] $end
+$var reg 1 "C in[93] $end
+$var reg 1 "D in[94] $end
+$var reg 1 "E in[95] $end
+$var reg 1 "F in[96] $end
+$var reg 1 "G in[97] $end
+$var reg 1 "H in[98] $end
+$var reg 1 "I in[99] $end
+$var reg 1 "J in[100] $end
+$var reg 1 "K in[101] $end
+$var reg 1 "L in[102] $end
+$var reg 1 "M in[103] $end
+$var reg 1 "N in[104] $end
+$var reg 1 "O in[105] $end
+$var reg 1 "P in[106] $end
+$var reg 1 "Q in[107] $end
+$var reg 1 "R in[108] $end
+$var reg 1 "S in[109] $end
+$var reg 1 "T in[110] $end
+$var reg 1 "U in[111] $end
+$var reg 1 "V in[112] $end
+$var reg 1 "W in[113] $end
+$var reg 1 "X in[114] $end
+$var reg 1 "Y in[115] $end
+$var reg 1 "Z in[116] $end
+$var reg 1 "[ in[117] $end
+$var reg 1 "\ in[118] $end
+$var reg 1 "] in[119] $end
+$var reg 1 "^ in[120] $end
+$var reg 1 "_ in[121] $end
+$var reg 1 "` in[122] $end
+$var reg 1 "a in[123] $end
+$var reg 1 "b in[124] $end
+$var reg 1 "c in[125] $end
+$var reg 1 "d in[126] $end
+$var reg 1 "e in[127] $end
+$upscope $end
+$comment
+
+$end
+$enddefinitions $end
+
+
+$dumpvars
+#0
+b0 !
+b0 "
+b0 #
+b0 $
+b0 %
+b0 &
+b0 '
+b0 (
+b0 )
+b0 *
+b0 +
+b0 ,
+b0 -
+b0 .
+b0 /
+b0 0
+b0 1
+b0 2
+b0 3
+b0 4
+b0 5
+b0 6
+b0 7
+b0 8
+b0 9
+b0 :
+b0 ;
+b0 <
+b0 =
+b0 >
+b0 ?
+b0 @
+b0 A
+b0 B
+b0 C
+b0 D
+b0 E
+b0 F
+b0 G
+b0 H
+b0 I
+b0 J
+b0 K
+b0 L
+b0 M
+b0 N
+b0 O
+b0 P
+b0 Q
+b0 R
+b0 S
+b0 T
+b0 U
+b0 V
+b0 W
+b0 X
+b0 Y
+b0 Z
+b0 [
+b0 \
+b0 ]
+b0 ^
+b0 _
+b0 `
+b0 a
+b0 b
+b0 c
+b0 d
+b0 e
+b0 f
+b0 g
+b0 h
+b0 i
+b0 j
+b0 k
+b0 l
+b0 m
+b0 n
+b0 o
+b0 p
+b0 q
+b0 r
+b0 s
+b0 t
+b0 u
+b0 v
+b0 w
+b0 x
+b0 y
+b0 z
+b0 {
+b0 |
+b0 }
+b0 ~
+b0 !!
+b0 !"
+b0 !#
+b0 !$
+b0 !%
+b0 !&
+b0 !'
+b0 !(
+b0 !)
+b0 !*
+b0 !+
+b0 !,
+b0 !-
+b0 !.
+b0 !/
+b0 !0
+b0 !1
+b0 !2
+b0 !3
+b0 !4
+b0 !5
+b0 !6
+b0 !7
+b0 !8
+b0 !9
+b0 !:
+b0 !;
+b0 !<
+b0 !=
+b0 !>
+b0 !?
+b0 !@
+b0 !A
+b0 !B
+b0 !C
+b0 !D
+b1 !E
+b0 !F
+b0 !G
+b0 !H
+b0 !I
+b0 !J
+b0 !K
+b0 !L
+b0 !M
+b0 !N
+b0 !O
+b0 !P
+b0 !Q
+b0 !R
+b0 !S
+b0 !T
+b0 !U
+b0 !V
+b0 !W
+b0 !X
+b0 !Y
+b0 !Z
+b0 ![
+b0 !\
+b0 !]
+b0 !^
+b0 !_
+b0 !`
+b0 !a
+b0 !b
+b0 !c
+b0 !d
+b0 !e
+b0 !f
+b0 !g
+b0 !h
+b0 !i
+b0 !j
+b0 !k
+b0 !l
+b0 !m
+b0 !n
+b0 !o
+b0 !p
+b0 !q
+b0 !r
+b0 !s
+b0 !t
+b0 !u
+b0 !v
+b0 !w
+b0 !x
+b0 !y
+b0 !z
+b0 !{
+b0 !|
+b0 !}
+b0 !~
+b0 "!
+b0 ""
+b0 "#
+b0 "$
+b0 "%
+b0 "&
+b0 "'
+b0 "(
+b0 ")
+b0 "*
+b0 "+
+b0 ",
+b0 "-
+b0 ".
+b0 "/
+b0 "0
+b0 "1
+b0 "2
+b0 "3
+b0 "4
+b0 "5
+b0 "6
+b0 "7
+b0 "8
+b0 "9
+b0 ":
+b0 ";
+b0 "<
+b0 "=
+b0 ">
+b0 "?
+b0 "@
+b0 "A
+b0 "B
+b0 "C
+b0 "D
+b0 "E
+b0 "F
+b0 "G
+b0 "H
+b0 "I
+b0 "J
+b0 "K
+b0 "L
+b0 "M
+b0 "N
+b0 "O
+b0 "P
+b0 "Q
+b0 "R
+b0 "S
+b0 "T
+b0 "U
+b0 "V
+b0 "W
+b0 "X
+b0 "Y
+b0 "Z
+b0 "[
+b0 "\
+b0 "]
+b0 "^
+b0 "_
+b0 "`
+b0 "a
+b0 "b
+b0 "c
+b0 "d
+b0 "e
+$end
+#49
+b1 !
+#80
+b1 #
+#566
+b0 !
+#590
+b0 #
+#1029
+b0 !E
+b1 !L
+#1044
+bx !
+#1047
+b1 !
+#1078
+bx *
+#1081
+b1 *
+#1563
+b0 !
+#1591
+b0 *
+#2025
+b1 !D
+#2034
+b0 !L
+#2044
+bx !
+#2048
+b1 !
+#2078
+bx "
+#2080
+b1 "
+#2559
+b0 !
+#2588
+b0 "
+#3026
+b1 !F
+#3033
+b0 !D
+#3045
+bx !
+#3048
+b1 !
+#3078
+bx $
+#3080
+b1 $
+#3559
+b0 !
+#3590
+b0 $
+#4026
+b1 !G
+#4035
+b0 !F
+#4045
+bx !
+#4050
+b1 !
+#4079
+b1 %
+#4562
+b0 !
+#4589
+b0 %
+#5029
+b0 !G
+b1 !K
+#5045
+bx !
+#5048
+b1 !
+#5078
+bx )
+#5081
+b1 )
+#5563
+b0 !
+#5588
+bx )
+#5591
+b0 )
+#6026
+b1 !G
+#6033
+b0 !K
+#6046
+b1 !
+#6079
+b1 %
+#6567
+b0 !
+#6587
+bx %
+#6590
+b0 %
+#7028
+b1 !D
+bx !G
+#7036
+b0 !G
+#7044
+bx !
+#7048
+b1 !
+#7080
+b1 "
+#7565
+b0 !
+#7588
+b0 "
+#8022
+bx !E
+#8029
+b0 !D
+b1 !E
+#8043
+bx !
+#8046
+b1 !
+#8079
+b1 #
+#8560
+b0 !
+#8588
+b0 #
+#9022
+bx !I
+#9029
+b0 !E
+b1 !I
+#9045
+bx !
+#9049
+b1 !
+#9080
+b1 '
+#9559
+b0 !
+#9590
+b0 '

@@ -1,0 +1,4 @@
+.Check output messages at sweep #0:
+Edge transition (max=5e-10s): At 6.12183e-09s, dout falls 3.07168e-09s after clk rise
+Edge transition (max=5e-10s): At 6.12183e-09s, dout falls 6.12183e-09s after clk fall
+

@@ -1,7 +1,7 @@
 .tile sense amplifier testbed
 
-.inc "~/lib/7nm_TT.pm"
-.inc "~/lib/ASAP7_PDKandLIB_v1p5/asap7libs_24/cdl/pex/asap7sc7p5t_24_SIMPLE_SRAM.sp"
+.inc "~/tech_file/7nm_TT.pm"
+.inc "~/tech_file/ASAP7_PDKandLIB_v1p5/asap7libs_24/cdl/pex/asap7sc7p5t_24_SIMPLE_SRAM.sp"
 .vec "vector_128.vec"
 
 .global vdd gnd
